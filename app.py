@@ -397,3 +397,12 @@ st.download_button(
     file_name="roundtree_freelancer_database.csv",
     mime="text/csv"
 )
+# Add this inside the 'with st.sidebar:' section:
+with st.expander("➕ Add New Client Account", expanded=False):
+    new_client_to_add = st.text_input("Enter New Client Name:")
+    if st.button("Add Client") and new_client_to_add:
+        # Add to session options
+        st.session_state.custom_clients = st.session_state.get("custom_clients", set())
+        st.session_state.custom_clients.add(new_client_to_add.strip())
+        st.success(f"Added '{new_client_to_add}'! It will now appear in all dropdowns.")
+        st.rerun()
