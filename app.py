@@ -1,408 +1,552 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from pypdf import PdfReader
+import plotly.graph_objects as go
 import os
-import io
+import re
+from datetime import datetime
 
-# --- PAGE CONFIGURATION ---
+# ==============================================================================
+# 1. PAGE CONFIG & ROUNDTREE BRAND STYLING
+# Brand Palette:
+#   Primary: Deep Forest / Pine (#1B3B36)
+#   Secondary: Warm Clay / Terracotta (#C2593F)
+#   Accent: Sage (#52796F) & Warm Sand (#F4F1EA)
+#   Dark Slate: #1E293B
+# ==============================================================================
 st.set_page_config(
-    page_title="Roundtree | Freelancer Portfolio & Audit Dashboard",
-    page_icon="💼",
+    page_title="Roundtree Agency | Contractor & Client Intelligence",
+    page_icon="🌲",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# --- PROFESSIONAL EXECUTIVE STYLING (CSS) ---
+# Custom CSS injecting Roundtree Agency typography, card aesthetics, and color scheme
 st.markdown("""
 <style>
-    @import url('[suspicious link removed]');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
     html, body, [class*="css"] {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: #1E293B;
     }
+
+    h1, h2, h3, .brand-serif {
+        font-family: 'Playfair Display', serif !important;
+        font-weight: 700;
+        color: #1B3B36 !important;
+    }
+
+    .stApp {
+        background-color: #FAF8F5;
+    }
+
+    /* Metric Card Styling */
     .metric-card {
-        background: #ffffff;
-        border: 1px solid #e2e8f0;
-        border-radius: 10px;
-        padding: 18px 22px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        background: #FFFFFF;
+        border: 1px solid #E5E1D8;
+        border-radius: 12px;
+        padding: 20px 24px;
+        box-shadow: 0 2px 8px rgba(27, 59, 54, 0.04);
         margin-bottom: 12px;
     }
-    .metric-title {
-        font-size: 0.82rem;
-        font-weight: 600;
-        color: #64748b;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        margin-bottom: 6px;
-    }
-    .metric-value {
-        font-size: 1.75rem;
+    .metric-val {
+        font-size: 28px;
         font-weight: 700;
-        color: #0f172a;
+        color: #1B3B36;
+        margin-top: 4px;
+        line-height: 1.2;
+    }
+    .metric-lbl {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #64748B;
     }
     .metric-sub {
-        font-size: 0.8rem;
-        color: #10b981;
+        font-size: 12px;
+        color: #94A3B8;
         margin-top: 4px;
-        font-weight: 500;
     }
-    .source-tag {
-        background-color: #f1f5f9;
-        color: #334155;
-        padding: 2px 8px;
-        border-radius: 4px;
-        font-family: monospace;
-        font-size: 0.78rem;
+
+    /* Designer Profile Card */
+    .designer-card {
+        background: #FFFFFF;
+        border: 1px solid #E2DCD2;
+        border-top: 4px solid #1B3B36;
+        border-radius: 10px;
+        padding: 18px 20px;
+        margin-bottom: 16px;
+        transition: transform 0.15s ease;
+    }
+    .designer-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(27, 59, 54, 0.08);
+    }
+    .badge-client {
+        display: inline-block;
+        background-color: #EFECE6;
+        color: #1B3B36;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 3px 8px;
+        border-radius: 6px;
+        margin-right: 4px;
+        margin-bottom: 4px;
+    }
+
+    /* Tabs Styling */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 8px;
+        background-color: transparent;
+        border-bottom: 2px solid #E2DCD2;
+    }
+    .stTabs [data-baseweb="tab"] {
+        font-size: 14px;
+        font-weight: 600;
+        color: #64748B;
+        padding: 10px 20px;
+        border-radius: 8px 8px 0 0;
+    }
+    .stTabs [aria-selected="true"] {
+        color: #1B3B36 !important;
+        border-bottom: 3px solid #C2593F !important;
+        background-color: #FFFFFF;
     }
 </style>
 """, unsafe_allow_html=True)
 
-DB_FILE = "freelancer_database.csv"
-LOG_FILE = "uploaded_files_log.txt"
+# ==============================================================================
+# 2. DATA LOAD & CACHING
+# ==============================================================================
+DATA_FILE = "ledger_master.csv"
 
-# --- FULL AUTHORITATIVE DATASET (FROM ALL 56 SOURCES) ---
-INITIAL_DATA = [
-    # --- JOSIAH STAM (STAM CREATIVE) ---
-    {"id": "JS-01", "client": "Mission Increase", "contractor": "Josiah Stam", "date": "2026-01-30", "month": "Jan 2026", "hours": 14.31, "amount": 500.85, "task": "Giving Levels Doc, Media Kit, Taste of MI, Academy Mark", "source_file": "Jan. 26 Roundtree Invoice.pdf", "quarter": "Q1"},
-    {"id": "JS-02", "client": "Geneva", "contractor": "Josiah Stam", "date": "2026-01-30", "month": "Jan 2026", "hours": 23.68, "amount": 828.80, "task": "Tabletop Canvases, Postcard, Sustainers Logo & Graphics, Banners", "source_file": "Jan. 26 Roundtree Invoice.pdf", "quarter": "Q1"},
-    {"id": "JS-03", "client": "BLMH", "contractor": "Josiah Stam", "date": "2026-01-30", "month": "Jan 2026", "hours": 0.52, "amount": 18.20, "task": "BLMH Business Card", "source_file": "Jan. 26 Roundtree Invoice.pdf", "quarter": "Q1"},
-    {"id": "JS-04", "client": "Mission Increase", "contractor": "Josiah Stam", "date": "2026-02-27", "month": "Feb 2026", "hours": 23.67, "amount": 828.45, "task": "Academy Badge, Pitch Deck, Momentum Multiplied Slides, Specialized Email", "source_file": "Feb. 26 Roundtree Invoice.pdf", "quarter": "Q1"},
-    {"id": "JS-05", "client": "Geneva", "contractor": "Josiah Stam", "date": "2026-02-27", "month": "Feb 2026", "hours": 15.18, "amount": 531.30, "task": "Donor Letters, Welcome Gift Envelope, Golf Tournament, Annual Report", "source_file": "Feb. 26 Roundtree Invoice.pdf", "quarter": "Q1"},
-    {"id": "JS-06", "client": "BITS", "contractor": "Josiah Stam", "date": "2026-02-27", "month": "Feb 2026", "hours": 1.00, "amount": 35.00, "task": "Bible In The Schools Prospectus", "source_file": "Feb. 26 Roundtree Invoice.pdf", "quarter": "Q1"},
-    {"id": "JS-07", "client": "BLMH", "contractor": "Josiah Stam", "date": "2026-02-27", "month": "Feb 2026", "hours": 0.08, "amount": 2.80, "task": "BLMH Business Card updates", "source_file": "Feb. 26 Roundtree Invoice.pdf", "quarter": "Q1"},
-    {"id": "JS-08", "client": "Geneva", "contractor": "Josiah Stam", "date": "2026-03-31", "month": "Mar 2026", "hours": 81.24, "amount": 2843.40, "task": "Annual Report (32.8h), Postcard, Checklist en español, Campaign Letter & Email, Cohort Explainer", "source_file": "March Roundtree Invoice.pdf", "quarter": "Q1"},
-    {"id": "JS-09", "client": "Mission Increase", "contractor": "Josiah Stam", "date": "2026-03-31", "month": "Mar 2026", "hours": 2.98, "amount": 104.30, "task": "Equipping Call Thumbnail, Taste of MI Canva, Jax Workshop Invite", "source_file": "March Roundtree Invoice.pdf", "quarter": "Q1"},
-    {"id": "JS-10", "client": "Geneva", "contractor": "Josiah Stam", "date": "2026-05-23", "month": "May 2026", "hours": 10.58, "amount": 370.30, "task": "Meeting Norms Tabletop Display, Retirement Plan Brochure", "source_file": "May 26 Roundtree Invoice.pdf", "quarter": "Q2"},
-    {"id": "JS-11", "client": "Mission Increase", "contractor": "Josiah Stam", "date": "2026-05-23", "month": "May 2026", "hours": 7.67, "amount": 268.45, "task": "MI Postcards, Alliance Post", "source_file": "May 26 Roundtree Invoice.pdf", "quarter": "Q2"},
-
-    # --- JARED ROBERTS ---
-    {"id": "JR-01", "client": "Mission Increase", "contractor": "Jared Roberts", "date": "2026-02-27", "month": "Feb 2026", "hours": 18.28, "amount": 2102.08, "task": "Impact Stories PDF, Website Impact Stories, Gratitude Report Edits, Email Template Changes", "source_file": "Invoice 0000068.pdf", "quarter": "Q1"},
-    {"id": "JR-02", "client": "PCA", "contractor": "Jared Roberts", "date": "2026-02-27", "month": "Feb 2026", "hours": 0.25, "amount": 25.00, "task": "Review PCA foundation plugins", "source_file": "Invoice 0000068.pdf", "quarter": "Q1"},
-    {"id": "JR-03", "client": "Internal/Agency", "contractor": "Jared Roberts", "date": "2026-03-02", "month": "Mar 2026", "hours": 0.25, "amount": 25.00, "task": "Update bios and finalize files", "source_file": "Invoice 0000073.pdf", "quarter": "Q1"},
-    {"id": "JR-04", "client": "Mission Increase", "contractor": "Jared Roberts", "date": "2026-03-31", "month": "Mar 2026", "hours": 6.85, "amount": 756.25, "task": "MI to Mi export, Email redesign, 4-col grid, Impact stories nav", "source_file": "Invoice 0000073.pdf", "quarter": "Q1"},
-    {"id": "JR-05", "client": "Saturate Design", "contractor": "Jared Roberts", "date": "2026-03-11", "month": "Mar 2026", "hours": 14.23, "amount": 1779.16, "task": "Saturate Design web development sprint", "source_file": "Invoice 0000073.pdf", "quarter": "Q1"},
-    {"id": "JR-06", "client": "Mission Increase", "contractor": "Jared Roberts", "date": "2026-04-30", "month": "Apr 2026", "hours": 13.13, "amount": 1507.08, "task": "Menu fixes, Resources Page rebuild, One-Pagers, Laptop mockups", "source_file": "Invoice 0000080.pdf", "quarter": "Q2"},
-    {"id": "JR-07", "client": "Mission Increase", "contractor": "Jared Roberts", "date": "2026-05-30", "month": "May 2026", "hours": 17.50, "amount": 1912.50, "task": "Complex gifts, Core Services PDF, Figma html mockups, Website fixes", "source_file": "Invoice 0000081.pdf", "quarter": "Q2"},
-    {"id": "JR-08", "client": "Mission Increase", "contractor": "Jared Roberts", "date": "2026-06-30", "month": "Jun 2026", "hours": 12.25, "amount": 1368.75, "task": "Academy webinar assets, Resources troubleshooting, Q3 Webinar Booklet", "source_file": "Invoice 0000084.pdf", "quarter": "Q2"},
-    {"id": "JR-09", "client": "Mission Increase", "contractor": "Jared Roberts", "date": "2026-07-24", "month": "Jul 2026", "hours": 3.50, "amount": 375.00, "task": "Q3 Webinar Booklet, PowerPoint, Social graphics, Landing pages", "source_file": "Invoice 0000087.pdf", "quarter": "Q3"},
-    {"id": "JR-10", "client": "Rock Creek", "contractor": "Jared Roberts", "date": "2026-07-24", "month": "Jul 2026", "hours": 1.00, "amount": 125.00, "task": "Troubleshoot Rock Creek broken design", "source_file": "Invoice 0000087.pdf", "quarter": "Q3"},
-    {"id": "JR-11", "client": "Mission Increase", "contractor": "Jared Roberts", "date": "2026-08-31", "month": "Aug 2026", "hours": 4.50, "amount": 475.00, "task": "Slide Deck, Asana web development tasks", "source_file": "Invoice 0000096.pdf", "quarter": "Q3"},
-    {"id": "JR-12", "client": "Mission Increase", "contractor": "Jared Roberts", "date": "2026-09-03", "month": "Sep 2026", "hours": 3.75, "amount": 393.75, "task": "Asana task updates & web development", "source_file": "Invoice 0000096.pdf", "quarter": "Q3"},
-
-    # --- MEGAN HEATH (ZETA CREATIVE) ---
-    {"id": "MH-01", "client": "BITS", "contractor": "Megan Heath (Zeta)", "date": "2026-02-01", "month": "Feb 2026", "hours": 1.50, "amount": 127.50, "task": "Prospectus, Envelope correction, Luncheon 2026, Vector issue", "source_file": "RoundtreeInvoice_February .pdf", "quarter": "Q1"},
-    {"id": "MH-02", "client": "SETCO", "contractor": "Megan Heath (Zeta)", "date": "2026-02-01", "month": "Feb 2026", "hours": 0.75, "amount": 63.75, "task": "Birthday Card Design", "source_file": "RoundtreeInvoice_February .pdf", "quarter": "Q1"},
-    {"id": "MH-03", "client": "BITS", "contractor": "Megan Heath (Zeta)", "date": "2026-03-01", "month": "Mar 2026", "hours": 2.75, "amount": 233.75, "task": "Vector issue, Luncheon 2026, Commitment Card 2026", "source_file": "RoundtreeInvoice_March.pdf", "quarter": "Q1"},
-    {"id": "MH-04", "client": "PCA", "contractor": "Megan Heath (Zeta)", "date": "2026-03-01", "month": "Mar 2026", "hours": 0.50, "amount": 42.50, "task": "PCAF iPhone Graphic", "source_file": "RoundtreeInvoice_March.pdf", "quarter": "Q1"},
-    {"id": "MH-05", "client": "SETCO", "contractor": "Megan Heath (Zeta)", "date": "2026-04-01", "month": "Apr 2026", "hours": 1.50, "amount": 127.50, "task": "Table Cloth and Banners", "source_file": "RoundtreeInovice_April.pdf", "quarter": "Q2"},
-    {"id": "MH-06", "client": "PCA", "contractor": "Megan Heath (Zeta)", "date": "2026-04-01", "month": "Apr 2026", "hours": 1.50, "amount": 127.50, "task": "PCAF One Pager & Business Cards", "source_file": "RoundtreeInovice_April.pdf", "quarter": "Q2"},
-    {"id": "MH-07", "client": "BITS", "contractor": "Megan Heath (Zeta)", "date": "2026-04-01", "month": "Apr 2026", "hours": 4.75, "amount": 403.75, "task": "Table Tent, Banner, Sympathy Card, Seating Chart, Luncheon Program", "source_file": "RoundtreeInovice_April.pdf", "quarter": "Q2"},
-    {"id": "MH-08", "client": "Internal/Agency", "contractor": "Megan Heath (Zeta)", "date": "2026-04-01", "month": "Apr 2026", "hours": 9.75, "amount": 828.75, "task": "Christ Presbyterian Church Profile", "source_file": "RoundtreeInovice_April.pdf", "quarter": "Q2"},
-    {"id": "MH-09", "client": "Mission Increase", "contractor": "Megan Heath (Zeta)", "date": "2026-04-01", "month": "Apr 2026", "hours": 0.50, "amount": 42.50, "task": "MI Indiana Addenda", "source_file": "RoundtreeInovice_April.pdf", "quarter": "Q2"},
-    {"id": "MH-10", "client": "Internal/Agency", "contractor": "Megan Heath (Zeta)", "date": "2026-04-01", "month": "Apr 2026", "hours": 2.25, "amount": 191.25, "task": "byFaith Magazine The Lamb of God Graphics", "source_file": "RoundtreeInovice_April.pdf", "quarter": "Q2"},
-    {"id": "MH-11", "client": "Mission Increase", "contractor": "Megan Heath (Zeta)", "date": "2026-05-01", "month": "May 2026", "hours": 2.00, "amount": 170.00, "task": "Direct Mail Piece, Response Card Smart Giving", "source_file": "RoundtreeInvoice_May.pdf", "quarter": "Q2"},
-    {"id": "MH-12", "client": "BITS", "contractor": "Megan Heath (Zeta)", "date": "2026-05-01", "month": "May 2026", "hours": 0.25, "amount": 21.25, "task": "BITS Business Card", "source_file": "RoundtreeInvoice_May.pdf", "quarter": "Q2"},
-    {"id": "MH-13", "client": "PCA", "contractor": "Megan Heath (Zeta)", "date": "2026-05-01", "month": "May 2026", "hours": 3.25, "amount": 276.25, "task": "PCAF Response Device Update, Business Cards, Serving Churches Trifold", "source_file": "RoundtreeInvoice_May.pdf", "quarter": "Q2"},
-    {"id": "MH-14", "client": "Mission Increase", "contractor": "Megan Heath (Zeta)", "date": "2026-06-01", "month": "Jun 2026", "hours": 1.00, "amount": 85.00, "task": "Direct Mail Piece, Lee Comm Ops Guide, Commitment Card Edits", "source_file": "RoundtreeInvoice_June (1).pdf", "quarter": "Q2"},
-    {"id": "MH-15", "client": "BITS", "contractor": "Megan Heath (Zeta)", "date": "2026-06-01", "month": "Jun 2026", "hours": 0.50, "amount": 42.50, "task": "BITS Business Card", "source_file": "RoundtreeInvoice_June (1).pdf", "quarter": "Q2"},
-    {"id": "MH-16", "client": "PCA", "contractor": "Megan Heath (Zeta)", "date": "2026-06-01", "month": "Jun 2026", "hours": 2.00, "amount": 170.00, "task": "PCAF Serving Churches Trifold", "source_file": "RoundtreeInvoice_June (1).pdf", "quarter": "Q2"},
-    {"id": "MH-17", "client": "Internal/Agency", "contractor": "Megan Heath (Zeta)", "date": "2026-06-01", "month": "Jun 2026", "hours": 1.00, "amount": 85.00, "task": "Becoming Whole Flyer", "source_file": "RoundtreeInvoice_June (1).pdf", "quarter": "Q2"},
-    {"id": "MH-18", "client": "Mission Increase", "contractor": "Megan Heath (Zeta)", "date": "2026-07-01", "month": "Jul 2026", "hours": 9.75, "amount": 828.75, "task": "Dan Flyer, Ashley Shaffer PPT redesign (5.25h), Impact Report, At a Glance, Commitment Cards", "source_file": "RoundtreeInvoice_July2026.pdf", "quarter": "Q3"},
-    {"id": "MH-19", "client": "BITS", "contractor": "Megan Heath (Zeta)", "date": "2026-07-01", "month": "Jul 2026", "hours": 1.50, "amount": 127.50, "task": "Envelope Correction, Graph Edits, Letterhead Update", "source_file": "RoundtreeInvoice_July2026.pdf", "quarter": "Q3"},
-    {"id": "MH-20", "client": "PCA", "contractor": "Megan Heath (Zeta)", "date": "2026-07-01", "month": "Jul 2026", "hours": 0.75, "amount": 63.75, "task": "PCAF Business Cards", "source_file": "RoundtreeInvoice_July2026.pdf", "quarter": "Q3"},
-    {"id": "MH-21", "client": "Mission Increase", "contractor": "Megan Heath (Zeta)", "date": "2026-08-01", "month": "Aug 2026", "hours": 6.25, "amount": 531.25, "task": "At a Glance, Commitment Card, Placemats, Position Paper, Impact Report, Charity One Pager", "source_file": "RoundtreeInvoice_August .pdf", "quarter": "Q3"},
-    {"id": "MH-22", "client": "Internal/Agency", "contractor": "Megan Heath (Zeta)", "date": "2026-08-01", "month": "Aug 2026", "hours": 1.25, "amount": 106.25, "task": "Becoming Whole Flyers", "source_file": "RoundtreeInvoice_August .pdf", "quarter": "Q3"},
-    {"id": "MH-23", "client": "BITS", "contractor": "Megan Heath (Zeta)", "date": "2026-08-01", "month": "Aug 2026", "hours": 0.25, "amount": 21.25, "task": "BITS Map Update", "source_file": "RoundtreeInvoice_August .pdf", "quarter": "Q3"},
-    {"id": "MH-24", "client": "Mission Increase", "contractor": "Megan Heath (Zeta)", "date": "2026-09-01", "month": "Sep 2026", "hours": 9.25, "amount": 786.25, "task": "CAFO Ad, Academy One Pager, Banner, Foundation PPT, Letterhead, QR flyer, Champion Two Pagers", "source_file": "RoundtreeInvoice_September2026.pdf", "quarter": "Q3"},
-    {"id": "MH-25", "client": "Geneva", "contractor": "Megan Heath (Zeta)", "date": "2026-09-01", "month": "Sep 2026", "hours": 4.00, "amount": 340.00, "task": "Dental Slip Sheet, Envelope Edits, Social Graphics, Folder Update", "source_file": "RoundtreeInvoice_September2026.pdf", "quarter": "Q3"},
-    {"id": "MH-26", "client": "BITS", "contractor": "Megan Heath (Zeta)", "date": "2026-09-01", "month": "Sep 2026", "hours": 0.75, "amount": 63.75, "task": "Letterhead Update, State Map Update", "source_file": "RoundtreeInvoice_September2026.pdf", "quarter": "Q3"},
-    {"id": "MH-27", "client": "Internal/Agency", "contractor": "Megan Heath (Zeta)", "date": "2026-09-01", "month": "Sep 2026", "hours": 1.50, "amount": 127.50, "task": "Becoming Whole Flyers, Village School Cards", "source_file": "RoundtreeInvoice_September2026.pdf", "quarter": "Q3"},
-    {"id": "MH-28", "client": "Mission Increase", "contractor": "Megan Heath (Zeta)", "date": "2026-10-01", "month": "Oct 2026", "hours": 1.75, "amount": 148.75, "task": "Academy 2-pager, Impact Report, Gratitude Gathering Collateral", "source_file": "RoundtreeInvoice_October2026.pdf", "quarter": "Q4"},
-    {"id": "MH-29", "client": "Geneva", "contractor": "Megan Heath (Zeta)", "date": "2026-10-01", "month": "Oct 2026", "hours": 4.50, "amount": 382.50, "task": "Case for Support, Appeal Letter Design (3.0h), Clergy Act Social Post", "source_file": "RoundtreeInvoice_October2026.pdf", "quarter": "Q4"},
-    {"id": "MH-30", "client": "BITS", "contractor": "Megan Heath (Zeta)", "date": "2026-10-01", "month": "Oct 2026", "hours": 1.50, "amount": 127.50, "task": "Christmas Card Update, Luncheon Save the Date 2027, E-Signature", "source_file": "RoundtreeInvoice_October2026.pdf", "quarter": "Q4"},
-    {"id": "MH-31", "client": "SETCO", "contractor": "Megan Heath (Zeta)", "date": "2026-10-01", "month": "Oct 2026", "hours": 0.25, "amount": 21.25, "task": "Nutcracker Ad", "source_file": "RoundtreeInvoice_October2026.pdf", "quarter": "Q4"},
-    {"id": "MH-32", "client": "Internal/Agency", "contractor": "Megan Heath (Zeta)", "date": "2026-10-01", "month": "Oct 2026", "hours": 0.75, "amount": 63.75, "task": "byFaith Social Template", "source_file": "RoundtreeInvoice_October2026.pdf", "quarter": "Q4"},
-
-    # --- CASPER CO. LLC (ALEXANDRA CASPER - CONTENT & COPY) ---
-    {"id": "CC-01", "client": "Geneva", "contractor": "Casper Co.", "date": "2026-01-29", "month": "Jan 2026", "hours": 4.00, "amount": 580.00, "task": "Geneva Story - Elizabeth & Adam", "source_file": "Casper Co. LLC - Roundtree - Jan 2026 invoice.pdf", "quarter": "Q1"},
-    {"id": "CC-02", "client": "Geneva", "contractor": "Casper Co.", "date": "2026-02-27", "month": "Feb 2026", "hours": 5.00, "amount": 725.00, "task": "Geneva - Susan Story & Living Generously Booklet", "source_file": "Casper Co. LLC - Roundtree Invoice - Feb 2026.pdf", "quarter": "Q1"},
-    {"id": "CC-03", "client": "Geneva", "contractor": "Casper Co.", "date": "2026-03-30", "month": "Mar 2026", "hours": 5.00, "amount": 725.00, "task": "Geneva - David Story & Living Generously Booklet", "source_file": "Casper Co. LLC - Roundtree Invoice - March 2026.pdf", "quarter": "Q1"},
-    {"id": "CC-04", "client": "Geneva", "contractor": "Casper Co.", "date": "2026-04-29", "month": "Apr 2026", "hours": 6.00, "amount": 870.00, "task": "Financial planning story, Nathan story, Relief fund story", "source_file": "Casper Co. LLC - Roundtree - April 2026 invoice.pdf", "quarter": "Q2"},
-    {"id": "CC-05", "client": "Geneva", "contractor": "Casper Co.", "date": "2026-06-01", "month": "May 2026", "hours": 1.00, "amount": 145.00, "task": "Geneva Insurance article", "source_file": "Casper Co. LLC - Roundtree Invoice - May 2026.pdf", "quarter": "Q2"},
-    {"id": "CC-06", "client": "Geneva", "contractor": "Casper Co.", "date": "2026-07-31", "month": "Jul 2026", "hours": 2.50, "amount": 362.50, "task": "Geneva - Brent Curl Story", "source_file": "Casper Co. LLC - Roundtree Invoice - July 2026.pdf", "quarter": "Q3"},
-    {"id": "CC-07", "client": "Mission Increase", "contractor": "Casper Co.", "date": "2026-07-31", "month": "Jul 2026", "hours": 3.00, "amount": 435.00, "task": "Mission Increase Homepage Audit", "source_file": "Casper Co. LLC - Roundtree Invoice - July 2026.pdf", "quarter": "Q3"},
-    {"id": "CC-08", "client": "PCA", "contractor": "Casper Co.", "date": "2026-07-31", "month": "Jul 2026", "hours": 1.00, "amount": 145.00, "task": "AC Prayer Guide Letter", "source_file": "Casper Co. LLC - Roundtree Invoice - July 2026.pdf", "quarter": "Q3"},
-    {"id": "CC-09", "client": "Geneva", "contractor": "Casper Co.", "date": "2026-08-31", "month": "Aug 2026", "hours": 1.50, "amount": 217.50, "task": "Geneva Charitable IQ Article", "source_file": "Casper Co. LLC - Roundtree - Aug 2026 invoice.pdf", "quarter": "Q3"},
-    {"id": "CC-10", "client": "Mission Increase", "contractor": "Casper Co.", "date": "2026-08-31", "month": "Aug 2026", "hours": 1.00, "amount": 145.00, "task": "Mission Increase Homepage Copy Edits", "source_file": "Casper Co. LLC - Roundtree - Aug 2026 invoice.pdf", "quarter": "Q3"},
-    {"id": "CC-11", "client": "TGT", "contractor": "Casper Co.", "date": "2026-08-31", "month": "Aug 2026", "hours": 4.00, "amount": 580.00, "task": "TGT Website Copy Audit and Suggestions", "source_file": "Casper Co. LLC - Roundtree - Aug 2026 invoice.pdf", "quarter": "Q3"},
-    {"id": "CC-12", "client": "Internal/Agency", "contractor": "Casper Co.", "date": "2026-08-31", "month": "Aug 2026", "hours": 10.00, "amount": 1450.00, "task": "SRG Magazine Articles", "source_file": "Casper Co. LLC - Roundtree - Aug 2026 invoice.pdf", "quarter": "Q3"},
-    {"id": "CC-13", "client": "Geneva", "contractor": "Casper Co.", "date": "2026-09-30", "month": "Sep 2026", "hours": 10.50, "amount": 1522.50, "task": "ByFaith Article, Bill McCutcheon Story, Cybersecurity, Look/After letter & email", "source_file": "Casper Co. LLC- Roundtree Invoice - Sep 2026.pdf", "quarter": "Q3"},
-    {"id": "CC-14", "client": "Mission Increase", "contractor": "Casper Co.", "date": "2026-09-30", "month": "Sep 2026", "hours": 2.50, "amount": 362.50, "task": "Mission Increase 2-pager", "source_file": "Casper Co. LLC- Roundtree Invoice - Sep 2026.pdf", "quarter": "Q3"},
-    {"id": "CC-15", "client": "Geneva", "contractor": "Casper Co.", "date": "2026-10-30", "month": "Oct 2026", "hours": 5.25, "amount": 761.25, "task": "Bill McCutchon Story, ByFaith Story, Clergy Press Release, Living Generously, One-page proposal", "source_file": "Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf", "quarter": "Q4"},
-    {"id": "CC-16", "client": "PCA", "contractor": "Casper Co.", "date": "2026-10-30", "month": "Oct 2026", "hours": 3.50, "amount": 507.50, "task": "PCA AC Ads, PCAF Articles on generosity & giving", "source_file": "Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf", "quarter": "Q4"},
-    {"id": "CC-17", "client": "Internal/Agency", "contractor": "Casper Co.", "date": "2026-10-30", "month": "Oct 2026", "hours": 5.50, "amount": 797.50, "task": "West Paces Advisors - Creative Ideas and Research", "source_file": "Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf", "quarter": "Q4"},
-
-    # --- MOLLY KELLEY ---
-    {"id": "MK-01", "client": "Mission Increase", "contractor": "Molly Kelley", "date": "2026-01-09", "month": "Jan 2026", "hours": 2.25, "amount": 135.00, "task": "MI Jacksonville Asset Buildout (table tent, notecards, banner)", "source_file": "Invoice_MollyKelley_1.9.26 - Invoice.pdf", "quarter": "Q1"},
-    {"id": "MK-02", "client": "Mission Increase", "contractor": "Molly Kelley", "date": "2026-02-26", "month": "Feb 2026", "hours": 15.50, "amount": 930.00, "task": "Mission Increase Gratitude Report layout", "source_file": "Invoice_MollyKelley_2.26.26 - Invoice.pdf", "quarter": "Q1"},
-    {"id": "MK-03", "client": "Langham", "contractor": "Molly Kelley", "date": "2026-02-26", "month": "Feb 2026", "hours": 6.50, "amount": 390.00, "task": "Langham Cultivate Draft", "source_file": "Invoice_MollyKelley_2.26.26 - Invoice.pdf", "quarter": "Q1"},
-    {"id": "MK-04", "client": "Mission Increase", "contractor": "Molly Kelley", "date": "2026-03-18", "month": "Mar 2026", "hours": 3.00, "amount": 180.00, "task": "Major Givers Document, Gratitude Report Mockups", "source_file": "Invoice_MollyKelley_3.18.26 - Invoice.pdf", "quarter": "Q1"},
-    {"id": "MK-05", "client": "Langham", "contractor": "Molly Kelley", "date": "2026-03-18", "month": "Mar 2026", "hours": 4.25, "amount": 255.00, "task": "Langham Cultivate Final and Response Device", "source_file": "Invoice_MollyKelley_3.18.26 - Invoice.pdf", "quarter": "Q1"},
-    {"id": "MK-06", "client": "Internal/Agency", "contractor": "Molly Kelley", "date": "2026-06-22", "month": "Jun 2026", "hours": 2.50, "amount": 150.00, "task": "VSI Report edits", "source_file": "Invoice_MollyKelley_6.22.26 - Invoice.pdf", "quarter": "Q2"},
-    {"id": "MK-07", "client": "PCA", "contractor": "Molly Kelley", "date": "2026-06-22", "month": "Jun 2026", "hours": 4.75, "amount": 285.00, "task": "PCAF Devo Translations, Promo Email, Devotional Landing Page, Annual Report Webpage", "source_file": "Invoice_MollyKelley_6.22.26 - Invoice.pdf", "quarter": "Q2"},
-    {"id": "MK-08", "client": "Langham", "contractor": "Molly Kelley", "date": "2026-06-22", "month": "Jun 2026", "hours": 0.50, "amount": 30.00, "task": "Langham Cultivate Digital Edits", "source_file": "Invoice_MollyKelley_6.22.26 - Invoice.pdf", "quarter": "Q2"},
-
-    # --- TRUELIGHT BRANDING (RANDAL) ---
-    {"id": "TL-01", "client": "Mission Increase", "contractor": "TrueLight Branding", "date": "2026-05-01", "month": "May 2026", "hours": 20.70, "amount": 2070.00, "task": "Communications and Operations Guide - Design, layout", "source_file": "TLB INV 1573.pdf", "quarter": "Q2"},
-    {"id": "TL-02", "client": "PCA", "contractor": "TrueLight Branding", "date": "2026-05-20", "month": "May 2026", "hours": 11.00, "amount": 1100.00, "task": "PCAF T-shirt design & Trade show 20x8 Give Smarter backdrop", "source_file": "TLB INV 1581.pdf", "quarter": "Q2"},
-    {"id": "TL-03", "client": "Mission Increase", "contractor": "TrueLight Branding", "date": "2026-07-13", "month": "Jul 2026", "hours": 9.30, "amount": 930.00, "task": "Mission Increase - two executive PowerPoint Presentations", "source_file": "TLB INV 1591.pdf", "quarter": "Q3"},
-    {"id": "TL-04", "client": "Mission Increase", "contractor": "TrueLight Branding", "date": "2026-10-30", "month": "Oct 2026", "hours": 14.20, "amount": 1420.00, "task": "Multiply logo & Gratitude Report cover designs", "source_file": "TLB INV 1611.pdf", "quarter": "Q4"},
-
-    # --- OLIVIA NOELLE DESIGN ---
-    {"id": "ON-01", "client": "Internal/Agency", "contractor": "Olivia Noelle", "date": "2026-03-27", "month": "Mar 2026", "hours": 7.49, "amount": 262.15, "task": "Becoming Whole Conference Logo", "source_file": "Invoice - Olivia Noelle Design - 1 - Invoice.pdf", "quarter": "Q1"},
-    {"id": "ON-02", "client": "Mission Increase", "contractor": "Olivia Noelle", "date": "2026-08-07", "month": "Aug 2026", "hours": 2.83, "amount": 99.05, "task": "Mission Increase Logo edits", "source_file": "Invoice - Olivia Noelle Design - 1 - Invoice.pdf", "quarter": "Q3"},
-    {"id": "ON-03", "client": "Geneva", "contractor": "Olivia Noelle", "date": "2026-08-13", "month": "Aug 2026", "hours": 23.41, "amount": 819.35, "task": "Geneva Benefits Marketing Collateral Design", "source_file": "Invoice - Olivia Noelle Design - 1 - Invoice.pdf", "quarter": "Q3"},
-
-    # --- CRAFT & CALLING (RACHEL KNUTSON) ---
-    {"id": "CCK-01", "client": "Mission Increase", "contractor": "Craft & Calling", "date": "2026-10-23", "month": "Oct 2026", "hours": 13.15, "amount": 407.65, "task": "Prayer Gathering Social Media, Gates of Thanksgiving Invitation, Christmas Card", "source_file": "Invoice 1001.pdf", "quarter": "Q4"},
-    {"id": "CCK-02", "client": "PCA", "contractor": "Craft & Calling", "date": "2026-10-23", "month": "Oct 2026", "hours": 3.72, "amount": 115.32, "task": "PCA AC General Assembly Booklet Ads", "source_file": "Invoice 1001.pdf", "quarter": "Q4"},
-
-    # --- PILAND LEGAL ---
-    {"id": "PL-01", "client": "Geneva", "contractor": "Piland Legal", "date": "2026-10-09", "month": "Oct 2026", "hours": 1.00, "amount": 250.00, "task": "Giving Options for Those Age 70 1/2 and Older Article", "source_file": "Invoice - Roundtree 10.9.26.pdf", "quarter": "Q4"},
-
-    # --- GRACE PARKER (FROM NEW REPORT CSV - 37 DETAILED TASKS) ---
-    {"id": "GP-01", "client": "Mission Increase", "contractor": "Grace Parker", "date": "2026-06-30", "month": "Jun 2026", "hours": 3.22, "amount": 96.60, "task": "Mi Capital Campaign Roadmap / Whitepaper", "source_file": "New_Report_2026-Jan-01-2026-Dec-31.csv", "quarter": "Q2"},
-    {"id": "GP-02", "client": "Geneva", "contractor": "Grace Parker", "date": "2026-06-30", "month": "Jun 2026", "hours": 14.74, "amount": 442.20, "task": "Design V1 & Final proof review - Living Generously booklet", "source_file": "New_Report_2026-Jan-01-2026-Dec-31.csv", "quarter": "Q2"},
-    {"id": "GP-03", "client": "Geneva", "contractor": "Grace Parker", "date": "2026-06-30", "month": "Jun 2026", "hours": 4.60, "amount": 138.00, "task": "Retirement Brochures (Korean, Spanish, and English formatting)", "source_file": "New_Report_2026-Jan-01-2026-Dec-31.csv", "quarter": "Q2"},
-    {"id": "GP-04", "client": "Geneva", "contractor": "Grace Parker", "date": "2026-06-30", "month": "Jun 2026", "hours": 0.82, "amount": 24.60, "task": "Geneva- Relief Impact PDF layout", "source_file": "New_Report_2026-Jan-01-2026-Dec-31.csv", "quarter": "Q2"},
-    {"id": "GP-05", "client": "Geneva", "contractor": "Grace Parker", "date": "2026-06-30", "month": "Jun 2026", "hours": 4.65, "amount": 139.50, "task": "Geneva- Digital Design & Presentation slides", "source_file": "New_Report_2026-Jan-01-2026-Dec-31.csv", "quarter": "Q2"},
-    {"id": "GP-06", "client": "Mission Increase", "contractor": "Grace Parker", "date": "2026-06-30", "month": "Jun 2026", "hours": 1.68, "amount": 50.40, "task": "Mi Bugherd Website Edits & icon updates", "source_file": "New_Report_2026-Jan-01-2026-Dec-31.csv", "quarter": "Q2"},
-    {"id": "GP-07", "client": "Mission Increase", "contractor": "Grace Parker", "date": "2026-06-30", "month": "Jun 2026", "hours": 3.58, "amount": 107.40, "task": "Resource Redesign - Q2 2026 Workshop", "source_file": "New_Report_2026-Jan-01-2026-Dec-31.csv", "quarter": "Q2"},
-    {"id": "GP-08", "client": "Mission Increase", "contractor": "Grace Parker", "date": "2026-06-30", "month": "Jun 2026", "hours": 1.43, "amount": 42.90, "task": "Sarah / Feb 2026 Team Gathering collateral", "source_file": "New_Report_2026-Jan-01-2026-Dec-31.csv", "quarter": "Q2"},
-    {"id": "GP-09", "client": "Mission Increase", "contractor": "Grace Parker", "date": "2026-06-30", "month": "Jun 2026", "hours": 16.21, "amount": 486.30, "task": "State Addenda (VA), Headshots, Mi UK logo, MI specialized requests", "source_file": "New_Report_2026-Jan-01-2026-Dec-31.csv", "quarter": "Q2"},
-    {"id": "GP-10", "client": "PCA", "contractor": "Grace Parker", "date": "2026-06-30", "month": "Jun 2026", "hours": 2.67, "amount": 80.10, "task": "2026 PCAF GA Booth Design, A&C brochure, QR code lead gen", "source_file": "New_Report_2026-Jan-01-2026-Dec-31.csv", "quarter": "Q2"},
-    {"id": "GP-11", "client": "Langham", "contractor": "Grace Parker", "date": "2026-06-30", "month": "Jun 2026", "hours": 4.95, "amount": 148.50, "task": "Cultivate Spring 2026 design strategy", "source_file": "New_Report_2026-Jan-01-2026-Dec-31.csv", "quarter": "Q2"},
-    {"id": "GP-12", "client": "TGT", "contractor": "Grace Parker", "date": "2026-06-30", "month": "Jun 2026", "hours": 6.19, "amount": 185.70, "task": "TGT 2025 by the Numbers, Monthly digital content", "source_file": "New_Report_2026-Jan-01-2026-Dec-31.csv", "quarter": "Q2"},
-    {"id": "GP-13", "client": "Internal/Agency", "contractor": "Grace Parker", "date": "2026-06-30", "month": "Jun 2026", "hours": 4.28, "amount": 128.40, "task": "Charlotte Institute for Faith and Work draft brand layout", "source_file": "New_Report_2026-Jan-01-2026-Dec-31.csv", "quarter": "Q2"}
-]
-
-# --- PERSISTENCE LOGIC ---
-def load_data():
-    if os.path.exists(DB_FILE):
-        return pd.read_csv(DB_FILE)
-    df = pd.DataFrame(INITIAL_DATA)
-    df.to_csv(DB_FILE, index=False)
+@st.cache_data
+def load_data(filepath=DATA_FILE):
+    if not os.path.exists(filepath):
+        st.error(f"Ledger file not found at {filepath}")
+        return pd.DataFrame()
+    df = pd.read_csv(filepath)
+    df['Hours'] = pd.to_numeric(df['Hours'], errors='coerce').fillna(0.0)
+    df['Hourly Rate ($)'] = pd.to_numeric(df['Hourly Rate ($)'], errors='coerce').fillna(0.0)
+    df['Total Billed Amount ($)'] = pd.to_numeric(df['Total Billed Amount ($)'], errors='coerce').fillna(0.0)
+    df['Work Date / Invoice Date'] = df['Work Date / Invoice Date'].astype(str)
+    df['Month'] = df['Work Date / Invoice Date'].apply(lambda x: x[:7] if len(str(x))>=7 else '2026-00')
     return df
 
-def save_data(df):
-    df.to_csv(DB_FILE, index=False)
+df_master = load_data()
 
-def load_uploaded_log():
-    if os.path.exists(LOG_FILE):
-        with open(LOG_FILE, "r") as f:
-            return set(line.strip() for line in f.readlines())
-    return set()
+# Known client accounts for dropdowns & staging
+KNOWN_CLIENTS = [
+    "Mission Increase", "Geneva", "PCA Foundation", "Saturate", "BITS",
+    "SRG", "Langham", "Christ Presbyterian", "West Paces Advisors",
+    "PCA AC", "TGT", "Village Schools International", "byFaith",
+    "SETCO", "Rock Creek", "BLMH", "Charlotte Institute for Faith & Work",
+    "Internal / Agency Overhead", "Unconfirmed (Needs Review)"
+]
 
-def log_uploaded_file(filename):
-    with open(LOG_FILE, "a") as f:
-        f.write(f"{filename}\n")
+# Standard Contractor Rate Card for Ingestion Defaults
+DEFAULT_RATES = {
+    "Grace Parker": 95.0,
+    "Casper Co. LLC": 145.0,
+    "Megan Heath": 85.0,
+    "Josiah Stam": 35.0,
+    "TrueLight Branding, Inc.": 100.0,
+    "Molly Kelley": 60.0,
+    "Olivia Moore": 85.0,
+    "Craft & Calling": 31.0,
+    "Piland Legal": 250.0
+}
 
-# State Initialization
-if "df" not in st.session_state:
-    st.session_state.df = load_data()
-if "uploaded_files_log" not in st.session_state:
-    st.session_state.uploaded_files_log = load_uploaded_log()
-
-# --- SIDEBAR: CLIENT MANAGEMENT & FILTERS ---
+# ==============================================================================
+# 3. SIDEBAR CONTROLS & FILTERING
+# ==============================================================================
 with st.sidebar:
-    st.title("⚙️ Controls & Filters")
-    
-    # Global Client Rename Tool
-    with st.expander("🏷️ Rename a Client (Global)", expanded=False):
-        all_clients = sorted(list(st.session_state.df["client"].unique()))
-        selected_client_to_rename = st.selectbox("Select Client to Rename:", all_clients)
-        new_client_name = st.text_input("New Name:")
-        if st.button("Apply Global Rename") and new_client_name:
-            st.session_state.df.loc[st.session_state.df["client"] == selected_client_to_rename, "client"] = new_client_name.strip()
-            save_data(st.session_state.df)
-            st.success(f"Renamed '{selected_client_to_rename}' to '{new_client_name}'!")
-            st.rerun()
+    st.markdown("<h2 class='brand-serif' style='color:#1B3B36; font-size:24px; margin-bottom:0px;'>Roundtree Agency</h2>", unsafe_allow_html=True)
+    st.caption("Subcontractor & Client Financial Intelligence • FY 2026")
+    st.divider()
 
-    # Filters
-    st.subheader("🔍 Filter View")
-    client_filter = st.multiselect("Client", options=sorted(list(st.session_state.df["client"].unique())))
-    contractor_filter = st.multiselect("Contractor", options=sorted(list(st.session_state.df["contractor"].unique())))
-    quarter_filter = st.multiselect("Quarter", options=["Q1", "Q2", "Q3", "Q4"])
-    search_query = st.text_input("Search Task Keywords:")
+    st.subheader("Filter Dashboard")
+    all_quarters = ["All Quarters"] + sorted(list(df_master['Month & Quarter'].dropna().unique()))
+    sel_quarter = st.selectbox("Quarter / Period", all_quarters)
+
+    all_contractors = ["All Contractors"] + sorted(list(df_master['Contractor Name'].dropna().unique()))
+    sel_contractor = st.selectbox("Contractor", all_contractors)
+
+    all_clients = ["All Clients"] + sorted(list(df_master['Client Account'].dropna().unique()))
+    sel_client = st.selectbox("Client Account", all_clients)
 
     st.divider()
-    # Reset Data
-    if st.button("🔄 Reset to Full Defaults"):
-        if os.path.exists(DB_FILE):
-            os.remove(DB_FILE)
-        if os.path.exists(LOG_FILE):
-            os.remove(LOG_FILE)
-        st.session_state.df = pd.DataFrame(INITIAL_DATA)
-        save_data(st.session_state.df)
-        st.rerun()
+    st.markdown("### Agency Rate Policies")
+    st.caption("• **Grace Parker**: $95.00/hr (Approved)\n• **Casper Co.**: $145.00/hr\n• **Megan Heath**: $85.00/hr\n• **TrueLight**: $100.00/hr\n• **Pass-Through Printing**: Excluded")
 
-# Apply Filters
-filtered_df = st.session_state.df.copy()
-if client_filter:
-    filtered_df = filtered_df[filtered_df["client"].isin(client_filter)]
-if contractor_filter:
-    filtered_df = filtered_df[filtered_df["contractor"].isin(contractor_filter)]
-if quarter_filter:
-    filtered_df = filtered_df[filtered_df["quarter"].isin(quarter_filter)]
-if search_query:
-    filtered_df = filtered_df[filtered_df["task"].str.contains(search_query, case=False, na=False)]
+# Apply filters
+df_filtered = df_master.copy()
+if sel_quarter != "All Quarters":
+    df_filtered = df_filtered[df_filtered['Month & Quarter'] == sel_quarter]
+if sel_contractor != "All Contractors":
+    df_filtered = df_filtered[df_filtered['Contractor Name'] == sel_contractor]
+if sel_client != "All Clients":
+    df_filtered = df_filtered[df_filtered['Client Account'] == sel_client]
 
-# --- MAIN DASHBOARD HEADER ---
-st.title("💼 Roundtree Agency | Contractor Portfolio & Audit")
-st.caption("Live, permanently saved accounting of freelancer hours, spend distribution, and invoice source verification.")
+# ==============================================================================
+# 4. TOP EXECUTIVE HEADER & METRICS
+# ==============================================================================
+st.markdown("<h1 style='margin-bottom:2px;'>Financial Audit & Contractor Intelligence</h1>", unsafe_allow_html=True)
+st.caption("Audited Subcontractor Expenditures, Client Allocation Pacing, and Capacity Analytics")
 
-# --- FILE UPLOADER DRAWER ---
-with st.expander("📥 Upload Additional Invoices / CSVs (Auto-Saved & Deduplicated)", expanded=False):
-    uploaded_files = st.file_uploader("Drop new PDF invoices or CSV reports here:", accept_multiple_files=True, type=["pdf", "csv"])
-    if uploaded_files:
-        for f in uploaded_files:
-            if f.name in st.session_state.uploaded_files_log:
-                st.info(f"Skipping already uploaded file: {f.name}")
-                continue
-            st.session_state.uploaded_files_log.add(f.name)
-            log_uploaded_file(f.name)
-            st.success(f"Successfully processed {f.name}!")
+tot_spend = df_filtered['Total Billed Amount ($)'].sum()
+tot_hours = df_filtered['Hours'].sum()
+blended_rate = (tot_spend / tot_hours) if tot_hours > 0 else 0.0
+confirmed_spend = df_filtered[df_filtered['Status'] == 'Confirmed']['Total Billed Amount ($)'].sum()
+conf_pct = (confirmed_spend / tot_spend * 100) if tot_spend > 0 else 100.0
 
-# --- KPI METRIC CARDS ---
-k1, k2, k3, k4 = st.columns(4)
-total_spend = filtered_df["amount"].sum()
-total_hours = filtered_df["hours"].sum()
-top_client = filtered_df.groupby("client")["hours"].sum().idxmax() if not filtered_df.empty else "N/A"
-top_contractor = filtered_df.groupby("contractor")["amount"].sum().idxmax() if not filtered_df.empty else "N/A"
+c1, c2, c3, c4, c5 = st.columns(5)
+with c1:
+    st.markdown(f"""
+    <div class="metric-card">
+        <div class="metric-lbl">Total Contractor Spend</div>
+        <div class="metric-val">${tot_spend:,.2f}</div>
+        <div class="metric-sub">{len(df_filtered)} billable items</div>
+    </div>
+    """, unsafe_allow_html=True)
+with c2:
+    st.markdown(f"""
+    <div class="metric-card">
+        <div class="metric-lbl">Total Billed Hours</div>
+        <div class="metric-val">{tot_hours:,.1f} hrs</div>
+        <div class="metric-sub">Across active engagements</div>
+    </div>
+    """, unsafe_allow_html=True)
+with c3:
+    st.markdown(f"""
+    <div class="metric-card">
+        <div class="metric-lbl">Blended Hourly Cost</div>
+        <div class="metric-val">${blended_rate:,.2f}/hr</div>
+        <div class="metric-sub">Effective subcontractor yield</div>
+    </div>
+    """, unsafe_allow_html=True)
+with c4:
+    st.markdown(f"""
+    <div class="metric-card">
+        <div class="metric-lbl">Attribution Rate</div>
+        <div class="metric-val">{conf_pct:.1f}%</div>
+        <div class="metric-sub">${confirmed_spend:,.0f} verified</div>
+    </div>
+    """, unsafe_allow_html=True)
+with c5:
+    active_contractors = df_filtered['Contractor Name'].nunique()
+    active_clients = df_filtered['Client Account'].nunique()
+    st.markdown(f"""
+    <div class="metric-card">
+        <div class="metric-lbl">Active Roster</div>
+        <div class="metric-val">{active_contractors} Cont / {active_clients} Cl</div>
+        <div class="metric-sub">In selected period</div>
+    </div>
+    """, unsafe_allow_html=True)
 
-with k1:
-    st.markdown(f"""<div class="metric-card"><div class="metric-title">Total Spend</div><div class="metric-value">${total_spend:,.2f}</div><div class="metric-sub">Across active filters</div></div>""", unsafe_allow_html=True)
-with k2:
-    st.markdown(f"""<div class="metric-card"><div class="metric-title">Hours Logged</div><div class="metric-value">{total_hours:,.1f} hrs</div><div class="metric-sub">Across all deliverables</div></div>""", unsafe_allow_html=True)
-with k3:
-    st.markdown(f"""<div class="metric-card"><div class="metric-title">Top Client by Hours</div><div class="metric-value" style="font-size:1.35rem;">{top_client}</div><div class="metric-sub">Highest production load</div></div>""", unsafe_allow_html=True)
-with k4:
-    st.markdown(f"""<div class="metric-card"><div class="metric-title">Top Paid Contractor</div><div class="metric-value" style="font-size:1.35rem;">{top_contractor}</div><div class="metric-sub">Highest cumulative billing</div></div>""", unsafe_allow_html=True)
+st.write("")
 
-st.divider()
+# ==============================================================================
+# 5. MAIN NAVIGATION TABS
+# ==============================================================================
+tab_clients, tab_contractors, tab_velocity, tab_matrix, tab_ledger, tab_ingest = st.tabs([
+    "📊 Client Analytics & Donuts",
+    "👤 Designer & Contractor Cards",
+    "📈 Monthly Burn & Velocity",
+    "🧩 Utilization & Dependency Matrix",
+    "📑 Master Ledger Explorer",
+    "📥 Ingestion & Staging Review"
+])
 
-# --- INTERACTIVE CHARTS ---
-ch1, ch2 = st.columns(2)
-with ch1:
-    fig_client = px.bar(
-        filtered_df.groupby("client")[["hours", "amount"]].sum().reset_index().sort_values(by="hours", ascending=True),
-        x="hours", y="client", orientation="h",
-        title="Freelancer Hours by Client",
-        labels={"hours": "Total Hours Logged", "client": "Client Account"},
-        color="hours", color_continuous_scale="Blues"
+# ------------------------------------------------------------------------------
+# TAB 1: Client Analytics & Donut Charts
+# ------------------------------------------------------------------------------
+with tab_clients:
+    st.markdown("### Client Capacity & Expenditure Allocation")
+    st.caption("Comparison between financial spend and actual production hours absorbed by each client account.")
+
+    # Aggregate client spend & hours
+    client_agg = df_filtered.groupby('Client Account').agg(
+        Total_Spend=('Total Billed Amount ($)', 'sum'),
+        Total_Hours=('Hours', 'sum'),
+        Line_Items=('Item ID', 'count')
+    ).reset_index()
+
+    # Color palette matching Roundtree brand
+    brand_colors = [
+        '#1B3B36', '#C2593F', '#2D5A52', '#D97706', '#4B7B70',
+        '#E07A5F', '#3D405B', '#81B29A', '#F2CC8F', '#6D6875',
+        '#B5838D', '#E5989B', '#FFB4A2', '#6D597A', '#355070'
+    ]
+
+    col_d1, col_d2 = st.columns(2)
+
+    with col_d1:
+        fig_spend = px.pie(
+            client_agg,
+            names='Client Account',
+            values='Total_Spend',
+            hole=0.55,
+            title="<b>Share of Contractor Spend ($)</b>",
+            color_discrete_sequence=brand_colors
+        )
+        fig_spend.update_traces(textposition='inside', textinfo='percent+label', marker=dict(line=dict(color='#FFFFFF', width=2)))
+        fig_spend.update_layout(showlegend=False, margin=dict(t=50, b=20, l=20, r=20), height=380)
+        st.plotly_chart(fig_spend, use_container_width=True)
+
+    with col_d2:
+        fig_hours = px.pie(
+            client_agg,
+            names='Client Account',
+            values='Total_Hours',
+            hole=0.55,
+            title="<b>Share of Production Hours (hrs)</b>",
+            color_discrete_sequence=brand_colors
+        )
+        fig_hours.update_traces(textposition='inside', textinfo='percent+label', marker=dict(line=dict(color='#FFFFFF', width=2)))
+        fig_hours.update_layout(showlegend=False, margin=dict(t=50, b=20, l=20, r=20), height=380)
+        st.plotly_chart(fig_hours, use_container_width=True)
+
+    st.markdown("#### Client Account Ledger Summary")
+    client_agg['Effective Rate ($/hr)'] = client_agg.apply(lambda r: (r['Total_Spend'] / r['Total_Hours']) if r['Total_Hours'] > 0 else 0.0, axis=1)
+    client_agg['% of Total Spend'] = (client_agg['Total_Spend'] / tot_spend * 100) if tot_spend > 0 else 0.0
+    client_agg = client_agg.sort_values(by='Total_Spend', ascending=False)
+
+    st.dataframe(
+        client_agg.style.format({
+            'Total_Spend': '${:,.2f}',
+            'Total_Hours': '{:,.2f} hrs',
+            'Line_Items': '{:,}',
+            'Effective Rate ($/hr)': '${:,.2f}',
+            '% of Total Spend': '{:.2f}%'
+        }),
+        use_container_width=True
     )
-    fig_client.update_layout(showlegend=False, height=380, margin=dict(l=10, r=10, t=40, b=10))
-    st.plotly_chart(fig_client, use_container_width=True)
 
-with ch2:
-    fig_contractor = px.pie(
-        filtered_df.groupby("contractor")["amount"].sum().reset_index(),
-        names="contractor", values="amount",
-        title="Contractor Spend Breakdown ($)",
-        hole=0.45,
-        color_discrete_sequence=px.colors.qualitative.Prism
+# ------------------------------------------------------------------------------
+# TAB 2: Designer & Contractor Profile Cards
+# ------------------------------------------------------------------------------
+with tab_contractors:
+    st.markdown("### Designer Roster & Capacity Cards")
+    st.caption("Active subcontractors, contracted rates, total volume delivered, and client client portfolios.")
+
+    contractor_groups = df_filtered.groupby('Contractor Name')
+    c_names = sorted(list(contractor_groups.groups.keys()))
+
+    # Render in 3-column responsive card layout
+    cols_per_row = 3
+    for i in range(0, len(c_names), cols_per_row):
+        cols = st.columns(cols_per_row)
+        for j in range(cols_per_row):
+            idx = i + j
+            if idx < len(c_names):
+                c_name = c_names[idx]
+                c_df = contractor_groups.get_group(c_name)
+                c_spend = c_df['Total Billed Amount ($)'].sum()
+                c_hours = c_df['Hours'].sum()
+                c_eff_rate = (c_spend / c_hours) if c_hours > 0 else DEFAULT_RATES.get(c_name, 0.0)
+                c_clients = sorted(list(c_df['Client Account'].unique()))
+
+                # Badges HTML
+                badges_html = "".join([f"<span class='badge-client'>{cl}</span>" for cl in c_clients])
+
+                with cols[j]:
+                    st.markdown(f"""
+                    <div class="designer-card">
+                        <div style="font-size:18px; font-weight:700; color:#1B3B36;">{c_name}</div>
+                        <div style="font-size:12px; color:#64748B; margin-bottom:12px;">{len(c_df)} Line Items Billed</div>
+                        <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+                            <div>
+                                <div style="font-size:10px; color:#94A3B8; text-transform:uppercase; font-weight:700;">Total Spend</div>
+                                <div style="font-size:16px; font-weight:700; color:#1B3B36;">${c_spend:,.2f}</div>
+                            </div>
+                            <div>
+                                <div style="font-size:10px; color:#94A3B8; text-transform:uppercase; font-weight:700;">Hours Logged</div>
+                                <div style="font-size:16px; font-weight:700; color:#1B3B36;">{c_hours:,.1f} hrs</div>
+                            </div>
+                            <div>
+                                <div style="font-size:10px; color:#94A3B8; text-transform:uppercase; font-weight:700;">Effective Rate</div>
+                                <div style="font-size:16px; font-weight:700; color:#C2593F;">${c_eff_rate:,.1f}/hr</div>
+                            </div>
+                        </div>
+                        <div style="font-size:10px; color:#94A3B8; text-transform:uppercase; font-weight:700; margin-top:12px; margin-bottom:6px;">Client Engagements</div>
+                        <div>{badges_html}</div>
+                    </div>
+                    """, unsafe_allow_html=True)
+
+# ------------------------------------------------------------------------------
+# TAB 3: Monthly Burn & Velocity Tracking
+# ------------------------------------------------------------------------------
+with tab_velocity:
+    st.markdown("### Monthly Spend Velocity & Freelancer Burn Rate")
+    st.caption("Month-over-month trajectory of subcontractor expenditures and operational cadence.")
+
+    # Group by Month
+    monthly_df = df_filtered.groupby(['Month', 'Client Account'])['Total Billed Amount ($)'].sum().reset_index()
+    monthly_total = df_filtered.groupby('Month').agg(
+        Monthly_Spend=('Total Billed Amount ($)', 'sum'),
+        Monthly_Hours=('Hours', 'sum')
+    ).reset_index()
+
+    # Calculate MoM Growth & Rolling Velocity
+    monthly_total['Spend Velocity (3-Mo MA)'] = monthly_total['Monthly_Spend'].rolling(window=3, min_periods=1).mean()
+
+    # Stacked Bar Chart for Monthly Spend by Client
+    fig_monthly = px.bar(
+        monthly_df,
+        x='Month',
+        y='Total Billed Amount ($)',
+        color='Client Account',
+        title="<b>Monthly Contractor Spend by Client ($)</b>",
+        color_discrete_sequence=brand_colors
     )
-    fig_contractor.update_layout(height=380, margin=dict(l=10, r=10, t=40, b=10))
-    st.plotly_chart(fig_contractor, use_container_width=True)
+    fig_monthly.update_layout(barmode='stack', height=400, margin=dict(t=50, b=20, l=20, r=20), xaxis_title="Billing Month", yaxis_title="Gross Spend ($)")
+    st.plotly_chart(fig_monthly, use_container_width=True)
 
-st.divider()
+    # Line Chart for Velocity
+    fig_line = go.Figure()
+    fig_line.add_trace(go.Scatter(
+        x=monthly_total['Month'],
+        y=monthly_total['Monthly_Spend'],
+        mode='lines+markers',
+        name='Actual Monthly Spend',
+        line=dict(color='#C2593F', width=3),
+        marker=dict(size=7)
+    ))
+    fig_line.add_trace(go.Scatter(
+        x=monthly_total['Month'],
+        y=monthly_total['Spend Velocity (3-Mo MA)'],
+        mode='lines',
+        name='3-Month Moving Average Velocity',
+        line=dict(color='#1B3B36', width=2, dash='dash')
+    ))
+    fig_line.update_layout(
+        title="<b>Agency Contractor Spend Velocity & Trajectory</b>",
+        xaxis_title="Billing Month",
+        yaxis_title="Monthly Spend ($)",
+        height=350,
+        margin=dict(t=50, b=20, l=20, r=20)
+    )
+    st.plotly_chart(fig_line, use_container_width=True)
 
-# --- TASK & INVOICE INSPECTOR MODAL/DRAWER ---
-st.subheader("🔍 Task & Invoice Source Inspector")
-st.caption("Select any task below to instantly reveal the exact invoice, date, and contractor it was pulled from:")
+# ------------------------------------------------------------------------------
+# TAB 4: Utilization & Dependency Matrix (Heatmap)
+# ------------------------------------------------------------------------------
+with tab_matrix:
+    st.markdown("### Contractor Utilization & Client Dependency Matrix")
+    st.caption("Cross-tabulation showing contractor allocation across clients and single-contractor account dependencies.")
 
-task_options = filtered_df["id"] + " — " + filtered_df["contractor"] + ": " + filtered_df["task"]
-selected_task_id_str = st.selectbox("Choose a task line to inspect:", options=task_options)
+    # Pivot table of Contractor vs Client
+    matrix_df = pd.pivot_table(
+        df_filtered,
+        values='Total Billed Amount ($)',
+        index='Contractor Name',
+        columns='Client Account',
+        aggfunc='sum',
+        fill_value=0.0
+    )
 
-if selected_task_id_str:
-    selected_id = selected_task_id_str.split(" — ")[0]
-    task_row = filtered_df[filtered_df["id"] == selected_id].iloc[0]
-    
-    col_insp1, col_insp2, col_insp3, col_insp4 = st.columns(4)
-    col_insp1.markdown(f"**📄 Source Invoice File:**<br>`{task_row['source_file']}`", unsafe_allow_html=True)
-    col_insp2.markdown(f"**👤 Contractor:**<br>{task_row['contractor']}", unsafe_allow_html=True)
-    col_insp3.markdown(f"**📅 Month / Date:**<br>{task_row['month']} ({task_row['date']})", unsafe_allow_html=True)
-    col_insp4.markdown(f"**💵 Billed:**<br>**{task_row['hours']} hrs** | **${task_row['amount']:,.2f}**", unsafe_allow_html=True)
-    
-    st.info(f"**Task Description / Line Item:** {task_row['task']}")
+    fig_heat = px.imshow(
+        matrix_df,
+        text_auto=".0f",
+        aspect="auto",
+        color_continuous_scale=[[0, '#F9F8F6'], [0.2, '#E2DCD2'], [0.5, '#52796F'], [1.0, '#1B3B36']],
+        title="<b>Contractor × Client Spend Distribution ($)</b>"
+    )
+    fig_heat.update_layout(
+        height=450,
+        margin=dict(t=50, b=20, l=20, r=20),
+        xaxis_title="Client Account",
+        yaxis_title="Contractor"
+    )
+    st.plotly_chart(fig_heat, use_container_width=True)
 
-st.divider()
+    st.info("💡 **Auditor Insight**: Deep green cells represent high contractor-client concentration (e.g., Casper Co. on Geneva, Jared Roberts on Mission Increase, Megan Heath on BITS).")
 
-# --- 2026 MONTHLY AUDIT GRID (ON FILE VS MISSING) ---
-st.subheader("🗓️ 2026 Monthly Invoice Audit Matrix")
-st.caption("Month-by-month status of received invoices versus missing files you still need to track down:")
+# ------------------------------------------------------------------------------
+# TAB 5: Master Ledger Explorer
+# ------------------------------------------------------------------------------
+with tab_ledger:
+    st.markdown("### Master Accounting & Audit Ledger (FY 2026)")
+    st.caption("Searchable, filterable audit ledger with exact verbatim invoice task descriptions and source citations.")
 
-contractors_list = [
-    "Josiah Stam", "Jared Roberts", "Megan Heath (Zeta)", "Casper Co.", 
-    "TrueLight Branding", "Molly Kelley", "Olivia Noelle", "Craft & Calling", "Grace Parker"
-]
-months_list = ["Jan 2026", "Feb 2026", "Mar 2026", "Apr 2026", "May 2026", "Jun 2026", "Jul 2026", "Aug 2026", "Sep 2026", "Oct 2026", "Nov 2026", "Dec 2026"]
+    search_query = st.text_input("🔍 Search verbatim task description, Asana link, or item ID:", "")
+    ledger_display = df_filtered.copy()
 
-audit_rows = []
-for c in contractors_list:
-    row = {"Contractor": c}
-    for m in months_list:
-        has_inv = not st.session_state.df[(st.session_state.df["contractor"] == c) & (st.session_state.df["month"] == m)].empty
-        row[m] = "✅ On File" if has_inv else "❌ Missing"
-    audit_rows.append(row)
+    if search_query:
+        mask = ledger_display['Exact Verbatim Invoice Task Description'].str.contains(search_query, case=False, na=False) | \
+               ledger_display['Item ID'].str.contains(search_query, case=False, na=False) | \
+               ledger_display['Client Account'].str.contains(search_query, case=False, na=False)
+        ledger_display = ledger_display[mask]
 
-st.dataframe(pd.DataFrame(audit_rows), use_container_width=True, hide_index=True)
+    st.dataframe(
+        ledger_display[[
+            'Item ID', 'Contractor Name', 'Client Account', 'Status',
+            'Work Date / Invoice Date', 'Month & Quarter', 'Hours',
+            'Hourly Rate ($)', 'Total Billed Amount ($)',
+            'Exact Verbatim Invoice Task Description', 'Source Invoice File Name'
+        ]].style.format({
+            'Hours': '{:,.2f}',
+            'Hourly Rate ($)': '${:,.2f}',
+            'Total Billed Amount ($)': '${:,.2f}'
+        }),
+        use_container_width=True,
+        height=500
+    )
 
-st.divider()
+    csv_data = ledger_display.to_csv(index=False).encode('utf-8')
+    st.download_button(
+        label="📥 Download Filtered Ledger as CSV",
+        data=csv_data,
+        file_name="roundtree_filtered_ledger.csv",
+        mime="text/csv"
+    )
 
-# --- INTERACTIVE DATA TABLE & EDITABLE CLIENT DROPDOWN ---
-st.subheader("✏️ Interactive Client Allocation & Line Items")
-st.caption("Double-click any Client cell below to reassign or correct vague tasks. Edits auto-save permanently:")
+# ------------------------------------------------------------------------------
+# TAB 6: Ingestion & Staging Review Modal
+# ------------------------------------------------------------------------------
+with tab_ingest:
+    st.markdown("### Smart Invoice Ingestion & Staging Review")
+    st.caption("Upload incoming invoices (CSV or PDF) to stage, verify client tags, and append directly to the master ledger.")
 
-available_clients = sorted(list(set(st.session_state.df["client"].unique()) | {
-    "Mission Increase", "Geneva", "Saturate Design", "BITS", "Rock Creek", 
-    "BLMH", "PCA", "Langham", "TGT", "SETCO", "Internal/Agency"
-}))
+    uploaded_file = st.file_uploader("Upload Contractor Invoice or Timesheet", type=['csv', 'xlsx'])
 
-edited_df = st.data_editor(
-    st.session_state.df,
-    column_config={
-        "client": st.column_config.SelectboxColumn("Client Account", options=available_clients, required=True),
-        "amount": st.column_config.NumberColumn("Amount ($)", format="$%.2f"),
-        "hours": st.column_config.NumberColumn("Hours", format="%.2f hrs"),
-        "source_file": st.column_config.TextColumn("Source Invoice File", disabled=True),
-        "id": st.column_config.TextColumn("ID", disabled=True)
-    },
-    num_rows="dynamic",
-    use_container_width=True,
-    hide_index=True
-)
+    if uploaded_file is not None:
+        try:
+            if uploaded_file.name.endswith('.csv'):
+                staging_df = pd.read_csv(uploaded_file)
+            else:
+                staging_df = pd.read_excel(uploaded_file)
+            
+            st.success(f"Uploaded **{uploaded_file.name}** successfully ({len(staging_df)} rows detected).")
 
-if not edited_df.equals(st.session_state.df):
-    st.session_state.df = edited_df
-    save_data(edited_df)
-    st.toast("Changes saved permanently!", icon="💾")
+            st.markdown("#### Review & Adjust Staging Grid Before Commit")
+            st.caption("Ensure each task is mapped to the correct Client Account. Change any unassigned row before appending.")
 
-# Download backup
-csv_bytes = st.session_state.df.to_csv(index=False).encode('utf-8')
-st.download_button(
-    label="📥 Download Full Database Backup (CSV)",
-    data=csv_bytes,
-    file_name="roundtree_freelancer_database.csv",
-    mime="text/csv"
-)
-# Add this inside the 'with st.sidebar:' section:
-with st.expander("➕ Add New Client Account", expanded=False):
-    new_client_to_add = st.text_input("Enter New Client Name:")
-    if st.button("Add Client") and new_client_to_add:
-        # Add to session options
-        st.session_state.custom_clients = st.session_state.get("custom_clients", set())
-        st.session_state.custom_clients.add(new_client_to_add.strip())
-        st.success(f"Added '{new_client_to_add}'! It will now appear in all dropdowns.")
-        st.rerun()
+            # Editable Staging Grid
+            edited_df = st.data_editor(
+                staging_df,
+                num_rows="dynamic",
+                use_container_width=True,
+                height=300
+            )
+
+            if st.button("✅ Commit Staging Items to Master Ledger", type="primary"):
+                # Append and save logic
+                combined_df = pd.concat([df_master, edited_df], ignore_index=True)
+                combined_df.to_csv(DATA_FILE, index=False)
+                st.success("Successfully committed new rows to master ledger! Refresh dashboard to view updated analytics.")
+                st.cache_data.clear()
+
+        except Exception as e:
+            st.error(f"Error parsing uploaded file: {str(e)}")
+    else:
+        st.markdown("""
+        <div style="background:#FFFFFF; border:2px dashed #CBD5E1; border-radius:12px; padding:30px; text-align:center;">
+            <div style="font-size:32px; margin-bottom:8px;">📄</div>
+            <div style="font-size:16px; font-weight:600; color:#1B3B36;">Drag and drop new contractor invoices or timesheets here</div>
+            <div style="font-size:13px; color:#64748B; margin-top:4px;">Supported formats: CSV, XLSX (and future PDF OCR parses)</div>
+        </div>
+        """, unsafe_allow_html=True)
