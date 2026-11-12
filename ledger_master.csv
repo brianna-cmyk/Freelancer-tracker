@@ -1,309 +1,309 @@
-Item ID,Contractor Name,Client Account,Status,Work Date / Invoice Date,Month & Quarter,Hours,Hourly Rate ($),Total Billed Amount ($),Exact Verbatim Invoice Task Description,Source Invoice File Name,PM Notes / Reconciliation Rationale
-CC-001,Casper Co. LLC,Geneva,Confirmed,2026-01-29,Jan 2026 | Q1,2.0,145.0,290.0,Geneva Story - Elizabeth,Casper Co. LLC - Roundtree - Jan 2026 invoice.pdf,
-CC-002,Casper Co. LLC,Geneva,Confirmed,2026-01-29,Jan 2026 | Q1,2.0,145.0,290.0,Geneva Story - Adam,Casper Co. LLC - Roundtree - Jan 2026 invoice.pdf,
-CC-003,Casper Co. LLC,Geneva,Confirmed,2026-02-27,Feb 2026 | Q1,3.0,145.0,435.0,Geneva - Susan Story,Casper Co. LLC - Roundtree Invoice - Feb 2026.pdf,
-CC-004,Casper Co. LLC,Geneva,Confirmed,2026-02-27,Feb 2026 | Q1,2.0,145.0,290.0,Geneva - Living Generously Booklet,Casper Co. LLC - Roundtree Invoice - Feb 2026.pdf,
-CC-005,Casper Co. LLC,Geneva,Confirmed,2026-03-30,Mar 2026 | Q1,1.75,145.0,253.75,Geneva - David Story,Casper Co. LLC - Roundtree Invoice - March 2026.pdf,
-CC-006,Casper Co. LLC,Geneva,Confirmed,2026-03-30,Mar 2026 | Q1,3.25,145.0,471.25,Geneva - Living Generously Booklet,Casper Co. LLC - Roundtree Invoice - March 2026.pdf,
-CC-007,Casper Co. LLC,Geneva,Confirmed,2026-04-29,Apr 2026 | Q2,2.0,145.0,290.0,Financial planning story,Casper Co. LLC - Roundtree - April 2026 invoice.pdf,
-CC-008,Casper Co. LLC,Geneva,Confirmed,2026-04-29,Apr 2026 | Q2,2.5,145.0,362.5,Nathan story,Casper Co. LLC - Roundtree - April 2026 invoice.pdf,
-CC-009,Casper Co. LLC,Geneva,Confirmed,2026-04-29,Apr 2026 | Q2,1.5,145.0,217.5,Relief fund story,Casper Co. LLC - Roundtree - April 2026 invoice.pdf,
-CC-010,Casper Co. LLC,Geneva,Confirmed,2026-06-01,May 2026 | Q2,1.0,145.0,145.0,Geneva - Insurance article,Casper Co. LLC - Roundtree Invoice - May 2026.pdf,
-CC-011,Casper Co. LLC,Geneva,Confirmed,2026-07-31,Jul 2026 | Q3,2.5,145.0,362.5,Geneva - Brent Curl Story,Casper Co. LLC - Roundtree Invoice - July 2026.pdf,
-CC-012,Casper Co. LLC,Mission Increase,Confirmed,2026-07-31,Jul 2026 | Q3,3.0,145.0,435.0,Mission Increase - Home Page Audit,Casper Co. LLC - Roundtree Invoice - July 2026.pdf,
-CC-013,Casper Co. LLC,PCA AC,Confirmed,2026-07-31,Jul 2026 | Q3,1.0,145.0,145.0,AC Prayer Guide Letter,Casper Co. LLC - Roundtree Invoice - July 2026.pdf,
-CC-014,Casper Co. LLC,Geneva,Confirmed,2026-08-31,Aug 2026 | Q3,1.5,145.0,217.5,Geneva - Charitable IQ Article,Casper Co. LLC - Roundtree - Aug 2026 invoice.pdf,
-CC-015,Casper Co. LLC,Mission Increase,Confirmed,2026-08-31,Aug 2026 | Q3,1.0,145.0,145.0,Mission Increase Homepage Copy Edits,Casper Co. LLC - Roundtree - Aug 2026 invoice.pdf,
-CC-016,Casper Co. LLC,TGT,Confirmed,2026-08-31,Aug 2026 | Q3,4.0,145.0,580.0,TGT Website Copy Audit and Suggestions,Casper Co. LLC - Roundtree - Aug 2026 invoice.pdf,
-CC-017,Casper Co. LLC,SRG,Confirmed,2026-08-31,Aug 2026 | Q3,10.0,145.0,1450.0,SRG Magazine Articles,Casper Co. LLC - Roundtree - Aug 2026 invoice.pdf,
-CC-018,Casper Co. LLC,Geneva,Confirmed,2026-09-30,Sep 2026 | Q3,3.0,145.0,435.0,Geneva - ByFaith Article,Casper Co. LLC- Roundtree Invoice - Sep 2026.pdf,
-CC-019,Casper Co. LLC,Geneva,Confirmed,2026-09-30,Sep 2026 | Q3,2.5,145.0,362.5,Geneva - Bill McCutcheon Interview and Story,Casper Co. LLC- Roundtree Invoice - Sep 2026.pdf,
-CC-020,Casper Co. LLC,Geneva,Confirmed,2026-09-30,Sep 2026 | Q3,1.5,145.0,217.5,Geneva - Cybersecurity Article,Casper Co. LLC- Roundtree Invoice - Sep 2026.pdf,
-CC-021,Casper Co. LLC,Geneva,Confirmed,2026-09-30,Sep 2026 | Q3,2.0,145.0,290.0,Geneva - Look / After Framework,Casper Co. LLC- Roundtree Invoice - Sep 2026.pdf,
-CC-022,Casper Co. LLC,Geneva,Confirmed,2026-09-30,Sep 2026 | Q3,1.0,145.0,145.0,Geneva - Look / After Letter,Casper Co. LLC- Roundtree Invoice - Sep 2026.pdf,
-CC-023,Casper Co. LLC,Geneva,Confirmed,2026-09-30,Sep 2026 | Q3,0.5,145.0,72.5,Geneva - Look / After Email,Casper Co. LLC- Roundtree Invoice - Sep 2026.pdf,
-CC-024,Casper Co. LLC,Mission Increase,Confirmed,2026-09-30,Sep 2026 | Q3,2.5,145.0,362.5,Mission Increase 2-pager,Casper Co. LLC- Roundtree Invoice - Sep 2026.pdf,
-CC-025,Casper Co. LLC,Geneva,Confirmed,2026-10-30,Oct 2026 | Q4,1.5,145.0,217.5,Geneva - Bill McCutchon Story,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,
-CC-026,Casper Co. LLC,Geneva,Confirmed,2026-10-30,Oct 2026 | Q4,2.25,145.0,326.25,Geneva - ByFaith Mike Ahlberg Story,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,
-CC-027,Casper Co. LLC,Geneva,Confirmed,2026-10-30,Oct 2026 | Q4,1.0,145.0,145.0,Geneva - Clergy Press Release,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,
-CC-028,Casper Co. LLC,Geneva,Confirmed,2026-10-30,Oct 2026 | Q4,0.5,145.0,72.5,Geneva - Living Generously Email,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,
-CC-029,Casper Co. LLC,Geneva,Confirmed,2026-10-30,Oct 2026 | Q4,1.0,145.0,145.0,Geneva - One page proposal,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,
-CC-030,Casper Co. LLC,PCA AC,Confirmed,2026-10-30,Oct 2026 | Q4,1.0,145.0,145.0,PCA AC Ads,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,
-CC-031,Casper Co. LLC,PCA Foundation,Confirmed,2026-10-30,Oct 2026 | Q4,1.5,145.0,217.5,PCAF - Article on problems with generosity as industry,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,
-CC-032,Casper Co. LLC,PCA Foundation,Confirmed,2026-10-30,Oct 2026 | Q4,1.0,145.0,145.0,PCAF - Article on giving beyond the offering plate,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,
-CC-033,Casper Co. LLC,West Paces Advisors,Confirmed,2026-10-30,Oct 2026 | Q4,5.5,145.0,797.5,West Paces Advisors - Creative Ideas and Research,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,
-CK-001,Craft & Calling,Mission Increase,Confirmed,2026-10-23,Oct 2026 | Q4,4.5,31.0,139.5,Mission Increase - Prayer Gathering Social Media Content: Design of five branded images for publishing on social media platforms. 9/17,Invoice 1001.pdf,
-CK-002,Craft & Calling,Mission Increase,Confirmed,2026-10-23,Oct 2026 | Q4,6.57,31.0,203.67,Mission Increase Gates of Thanksgiving Invitation: Design of 5x7 invitation cards. 9/29–10/13,Invoice 1001.pdf,
-CK-003,Craft & Calling,PCA AC,Confirmed,2026-10-23,Oct 2026 | Q4,3.72,31.0,115.32,"PCA AC General Assembly Booklet Ads: Design of three ads (two half page, one full page) for General Assembly booklet. 10/8",Invoice 1001.pdf,
-CK-004,Craft & Calling,Mission Increase,Confirmed,2026-10-23,Oct 2026 | Q4,2.08,31.0,64.48,Mission Increase Christmas Card: Design of 5x7 holiday greeting card. 10/12– 10/14,Invoice 1001.pdf,
-GP-001,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,0.05,95.0,4.75,Mi Marks Update [Project: Project Requests],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-002,Grace Parker,Geneva,Confirmed,2026-12-31,FY 2026,0.82,95.0,77.9,Geneva- Relief Impact PDF [Project: Digital Design - Geneva],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-003,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,0.17,95.0,16.15,Edit Carlos Pena headshot - Mi [Project: Project Requests],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-004,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,3.22,95.0,305.9,Mi Capital Campaign Roadmap / Whitepaper  [Project: Mi Specialized],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-005,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,1.43,95.0,135.85,Sarah / Feb 2026 Team Gathering [Project: Project Requests],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-006,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,0.3,95.0,28.5,Edit Ray Strickland Headshot [Project: Project Requests],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-007,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,0.42,95.0,39.9,Andy / Green Mi UK logo  [Project: Project Requests],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-008,Grace Parker,TGT,Confirmed,2026-12-31,FY 2026,1.05,95.0,99.75,Design 2025 by the Numbers [Project: Monthly Digital Content - TGT],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-009,Grace Parker,Langham,Confirmed,2026-12-31,FY 2026,4.95,95.0,470.25,Cultivate Spring 2026 [Project: Strategy- Langham],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-010,Grace Parker,PCA Foundation,Confirmed,2026-12-31,FY 2026,0.72,95.0,68.4,Qr code to newsletter (lead gen from tshirts) [Project: 2026 PCAF GA Booth Design],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-011,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,0.22,95.0,20.9,Amber / State Addenda - Virginia [Project: Project Requests],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-012,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,1.68,95.0,159.6,Icon color needs updating [Project: Mi Bugherd Website Edits],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-013,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,3.58,95.0,340.1,Resource Redesign [Project: Q2 2026 Workshop],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-014,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,0.07,95.0,6.65,Dan / Headshot update [Project: Project Requests],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-015,Grace Parker,PCA Foundation,Confirmed,2026-12-31,FY 2026,1.78,95.0,169.1,A&C brochure [Project: Print Design-PCAF],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-016,Grace Parker,Geneva,Confirmed,2026-12-31,FY 2026,9.07,95.0,861.65,Design V1- living generously [Project: Strategy - Geneva],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-017,Grace Parker,Geneva,Confirmed,2026-12-31,FY 2026,5.67,95.0,538.65,Final proof review- living generously [Project: Strategy - Geneva],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-018,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,4.65,95.0,441.75,Jimeka / Rooted and Growing Event [Project: Project Requests],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-019,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,3.03,95.0,287.85,Brian / Gulf coast ppt redesign [Project: Project Requests],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-020,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,0.68,95.0,64.6,Downloadable asset - Mi Grant Services [Project: Mi Specialized],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-021,Grace Parker,Geneva,Confirmed,2026-12-31,FY 2026,2.75,95.0,261.25,Design Retirement Plan Brochure - Korean - Geneva [Project: Print Design - Geneva],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-022,Grace Parker,Geneva,Confirmed,2026-12-31,FY 2026,3.1,95.0,294.5,Design Retirement Plan Brochure - Spanish - Geneva [Project: Print Design - Geneva],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-023,Grace Parker,Geneva,Confirmed,2026-12-31,FY 2026,1.98,95.0,188.1,Design Retirement Plan Brochure - English - Geneva [Project: Print Design - Geneva],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-024,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,0.37,95.0,35.15,GPS / Reference sheet update [Project: Project Requests],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-025,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,0.07,95.0,6.65,Carlos / Fundamental Five doc [Project: Project Requests],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-026,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,3.0,95.0,285.0,Kristina / Client Retreat ppt redo [Project: Project Requests],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-027,Grace Parker,Geneva,Confirmed,2026-12-31,FY 2026,1.02,95.0,96.9,Mid-Year Impact Report 2026 - Geneva [Project: Print Design - Geneva],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-028,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,0.02,95.0,1.9,Ashley Shaffer / PPT redesign [Project: Project Requests],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-029,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,1.05,95.0,99.75,Scott / Donor pitch deck 6/11/26 [Project: Project Requests],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-030,Grace Parker,Geneva,Confirmed,2026-12-31,FY 2026,0.4,95.0,38.0,Geneva AD&D Updates [Project: Digital Design - Geneva],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-031,Grace Parker,PCA Foundation,Confirmed,2026-12-31,FY 2026,0.17,95.0,16.15,Careers page QR code flyer [Project: 2026 PCAF GA Booth Design],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-032,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,0.17,95.0,16.15,Update Staci's Photo [Project: Mi Bugherd Website Edits],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-033,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,1.82,95.0,172.9,Logo [Project: The 10:2 Global Prayer Gathering],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-034,Grace Parker,TGT,Confirmed,2026-12-31,FY 2026,2.02,95.0,191.9,"Cover Image + internal example (annual report, TGT) [Project: Annual Report 2026]",New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-035,Grace Parker,TGT,Confirmed,2026-12-31,FY 2026,3.12,95.0,296.4,Annual Report Design - TGT [Project: Annual Report 2026],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-036,Grace Parker,Mission Increase,Confirmed,2026-12-31,FY 2026,0.12,95.0,11.4,Mella Headshot update [Project: Project Requests],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-GP-037,Grace Parker,Charlotte Institute for Faith & Work,Confirmed,2026-12-31,FY 2026,4.28,95.0,406.6,Draft Design [Project: Charlotte Institute for Faith and Work],New_Report_2026-Jan-01-2026-Dec-31.csv,PM Confirmed: Grace Parker hourly rate set at $95.00/hr
-MK-001,Molly Kelley,Mission Increase,Confirmed,2026-01-09,Jan 2026 | Q1,2.25,60.0,135.0,"Mission Increase Jacksonville, Asset Buildout (table tent, notecards, retractable banner)",Invoice_MollyKelley_1.9.26 - Invoice.pdf,
-MK-002,Molly Kelley,Mission Increase,Confirmed,2026-02-26,Feb 2026 | Q1,15.5,60.0,930.0,Mission Increase (Gratitude Report),Invoice_MollyKelley_2.26.26 - Invoice.pdf,
-MK-003,Molly Kelley,Langham,Confirmed,2026-02-26,Feb 2026 | Q1,6.5,60.0,390.0,Langham (Cultivate Draft),Invoice_MollyKelley_2.26.26 - Invoice.pdf,
-MK-004,Molly Kelley,Mission Increase,Confirmed,2026-03-18,Mar 2026 | Q1,3.0,60.0,180.0,"Mission Increase (Major Givers Document, Gratitude Report Mockups)",Invoice_MollyKelley_3.18.26 - Invoice.pdf,
-MK-005,Molly Kelley,Langham,Confirmed,2026-03-18,Mar 2026 | Q1,4.25,60.0,255.0,Langham (Cultivate Final and Response Device),Invoice_MollyKelley_3.18.26 - Invoice.pdf,
-MK-006,Molly Kelley,Village Schools International,Confirmed,2026-06-22,Jun 2026 | Q2,2.5,60.0,150.0,VSI Report (edits after 5/15),Invoice_MollyKelley_6.22.26 - Invoice.pdf,
-MK-007,Molly Kelley,PCA Foundation,Confirmed,2026-06-22,Jun 2026 | Q2,0.75,60.0,45.0,PCAF Devo Translations,Invoice_MollyKelley_6.22.26 - Invoice.pdf,
-MK-008,Molly Kelley,Langham,Confirmed,2026-06-22,Jun 2026 | Q2,0.5,60.0,30.0,Langham Cultivate Digital Edits,Invoice_MollyKelley_6.22.26 - Invoice.pdf,
-MK-009,Molly Kelley,PCA Foundation,Confirmed,2026-06-22,Jun 2026 | Q2,0.75,60.0,45.0,PCAF Promo Email Design,Invoice_MollyKelley_6.22.26 - Invoice.pdf,
-MK-010,Molly Kelley,PCA Foundation,Confirmed,2026-06-22,Jun 2026 | Q2,1.0,60.0,60.0,PCAF Devotional Landing Page (after 5/15),Invoice_MollyKelley_6.22.26 - Invoice.pdf,
-MK-011,Molly Kelley,PCA Foundation,Confirmed,2026-06-22,Jun 2026 | Q2,2.25,60.0,135.0,PCAF Annual Report Webpage Design,Invoice_MollyKelley_6.22.26 - Invoice.pdf,
-OM-001,Olivia Moore,Geneva,Confirmed,2026-08-13,Aug 2026 | Q3,0.0,0.0,819.35,Marketing Material & Collateral Design - Various design projects for the Geneva Benefits Group,Invoice - Olivia Noelle Design - 1 - Invoice.pdf,
-OM-002,Olivia Moore,Mission Increase,Confirmed,2026-08-07,Aug 2026 | Q3,2.83,35.0,99.05,Mission Increase - Design Edits,Roundtree Timesheet-Invoice - 2.pdf,
-OM-003,Olivia Moore,Mission Increase,Confirmed,2026-03-27,Mar 2026 | Q1,2.17,35.0,75.95,Becoming Whole - Research and Ideation,Roundtree Timesheet-Invoice - Time sheet.pdf,
-OM-004,Olivia Moore,Mission Increase,Confirmed,2026-03-27,Mar 2026 | Q1,2.92,35.0,102.2,Becoming Whole - Logo Design,Roundtree Timesheet-Invoice - Time sheet.pdf,
-OM-005,Olivia Moore,Mission Increase,Confirmed,2026-03-27,Mar 2026 | Q1,2.4,35.0,84.0,Becoming Whole - Design Edits,Roundtree Timesheet-Invoice - Time sheet.pdf,
-PL-001,Piland Legal,PCA Foundation,Confirmed,2026-10-09,Oct 2026 | Q4,1.0,250.0,250.0,Article – “Giving Options for Those Age 70 ½ and Older”,Invoice - Roundtree 10.9.26.pdf,
-TB-001,"TrueLight Branding, Inc.",Mission Increase,Confirmed,2026-05-01,May 2026 | Q2,20.7,100.0,2070.0,"Mission Increase - Communications and Operations Guide - Design, layout",TLB INV 1573.pdf,
-TB-002,"TrueLight Branding, Inc.",PCA Foundation,Confirmed,2026-05-20,May 2026 | Q2,4.5,100.0,450.0,PCAF - T-shirt design,TLB INV 1581.pdf,
-TB-003,"TrueLight Branding, Inc.",PCA Foundation,Confirmed,2026-05-20,May 2026 | Q2,6.5,100.0,650.0,"PCAF - Trade show 20' x 8' ""Give Smarter"" backdrop",TLB INV 1581.pdf,
-TB-004,"TrueLight Branding, Inc.",Mission Increase,Confirmed,2026-07-13,Jul 2026 | Q3,9.3,100.0,930.0,Mission Increase - two PowerPoint Presentations,TLB INV 1591.pdf,
-TB-005,"TrueLight Branding, Inc.",Mission Increase,Confirmed,2026-10-30,Oct 2026 | Q4,8.8,100.0,880.0,Mission Increase - Multiply logo,TLB INV 1611.pdf,
-TB-006,"TrueLight Branding, Inc.",Mission Increase,Confirmed,2026-10-30,Oct 2026 | Q4,5.4,100.0,540.0,Mission Increase - Gratitude Report - cover designs,TLB INV 1611.pdf,
-JS-001,Josiah Stam,Mission Increase,Confirmed,2026-02-02,Jan 2026 | Q1,0.55,35.0,19.25,Mi Area Director Training Graphic,Jan. 26 Roundtree Invoice.pdf,
-JS-002,Josiah Stam,Mission Increase,Confirmed,2026-02-02,Jan 2026 | Q1,6.42,35.0,224.7,Mi Giving Levels Doc Redesign,Jan. 26 Roundtree Invoice.pdf,
-JS-003,Josiah Stam,Mission Increase,Confirmed,2026-02-02,Jan 2026 | Q1,0.83,35.0,29.05,Mi Media Kit,Jan. 26 Roundtree Invoice.pdf,
-JS-004,Josiah Stam,Mission Increase,Confirmed,2026-02-02,Jan 2026 | Q1,1.93,35.0,67.55,Mi Taste of Mission Increase February 2026,Jan. 26 Roundtree Invoice.pdf,
-JS-005,Josiah Stam,Mission Increase,Confirmed,2026-02-02,Jan 2026 | Q1,3.58,35.0,125.3,Mi Academy Mark,Jan. 26 Roundtree Invoice.pdf,
-JS-006,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,3.75,35.0,131.25,Geneva Tabletop Canvases,Jan. 26 Roundtree Invoice.pdf,
-JS-007,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,6.27,35.0,219.45,Geneva Monthly Giving Campaign Postcard,Jan. 26 Roundtree Invoice.pdf,
-JS-008,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,3.07,35.0,107.45,Geneva Sustainers Logo,Jan. 26 Roundtree Invoice.pdf,
-JS-009,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,1.83,35.0,64.05,Geneva Monthly Givers Infographic,Jan. 26 Roundtree Invoice.pdf,
-JS-010,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,1.5,35.0,52.5,Geneva Table Runner,Jan. 26 Roundtree Invoice.pdf,
-JS-011,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,1.5,35.0,52.5,Geneva Business Cards,Jan. 26 Roundtree Invoice.pdf,
-JS-012,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,2.58,35.0,90.3,Geneva Tabletop Banner,Jan. 26 Roundtree Invoice.pdf,
-JS-013,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,1.63,35.0,57.05,Geneva Retractable Banner,Jan. 26 Roundtree Invoice.pdf,
-JS-014,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,2.55,35.0,89.25,Geneva Sustainers Email Graphics,Jan. 26 Roundtree Invoice.pdf,
-JS-015,Josiah Stam,BLMH,Confirmed,2026-02-02,Jan 2026 | Q1,0.52,35.0,18.2,BLMH Business Card,Jan. 26 Roundtree Invoice.pdf,
-JS-016,Josiah Stam,BLMH,Confirmed,2026-02-27,Feb 2026 | Q1,0.08,35.0,2.8,BLMH Business Card,Feb. 26 Roundtree Invoice.pdf,
-JS-017,Josiah Stam,BITS,Confirmed,2026-02-27,Feb 2026 | Q1,1.0,35.0,35.0,Bible In The Schools Prospectus,Feb. 26 Roundtree Invoice.pdf,
-JS-018,Josiah Stam,Mission Increase,Confirmed,2026-02-27,Feb 2026 | Q1,0.55,35.0,19.25,Mi Academy Badge,Feb. 26 Roundtree Invoice.pdf,
-JS-019,Josiah Stam,Mission Increase,Confirmed,2026-02-27,Feb 2026 | Q1,0.57,35.0,19.95,Mi Core Webinars/ Workshops Badge,Feb. 26 Roundtree Invoice.pdf,
-JS-020,Josiah Stam,Mission Increase,Confirmed,2026-02-27,Feb 2026 | Q1,0.7,35.0,24.5,Mi Team Photo Update,Feb. 26 Roundtree Invoice.pdf,
-JS-021,Josiah Stam,Mission Increase,Confirmed,2026-02-27,Feb 2026 | Q1,5.25,35.0,183.75,Mi Momentum Multiplied Slides,Feb. 26 Roundtree Invoice.pdf,
-JS-022,Josiah Stam,Mission Increase,Confirmed,2026-02-27,Feb 2026 | Q1,11.3,35.0,395.5,Mi Donor Pitch Deck,Feb. 26 Roundtree Invoice.pdf,
-JS-023,Josiah Stam,Mission Increase,Confirmed,2026-02-27,Feb 2026 | Q1,2.45,35.0,85.75,Mi Specialized Email Design,Feb. 26 Roundtree Invoice.pdf,
-JS-024,Josiah Stam,Mission Increase,Confirmed,2026-02-27,Feb 2026 | Q1,1.85,35.0,64.75,Mi TG10,Feb. 26 Roundtree Invoice.pdf,
-JS-025,Josiah Stam,Geneva,Confirmed,2026-02-27,Feb 2026 | Q1,1.38,35.0,48.3,Geneva New & Existing Donor Letters,Feb. 26 Roundtree Invoice.pdf,
-JS-026,Josiah Stam,Geneva,Confirmed,2026-02-27,Feb 2026 | Q1,1.5,35.0,52.5,Geneva Welcome Gift Envelope,Feb. 26 Roundtree Invoice.pdf,
-JS-027,Josiah Stam,Geneva,Confirmed,2026-02-27,Feb 2026 | Q1,4.77,35.0,166.95,Geneva Golf Tournament Graphics,Feb. 26 Roundtree Invoice.pdf,
-JS-028,Josiah Stam,Geneva,Confirmed,2026-02-27,Feb 2026 | Q1,1.65,35.0,57.75,Geneva Call Package Checklist en español,Feb. 26 Roundtree Invoice.pdf,
-JS-029,Josiah Stam,Geneva,Confirmed,2026-02-27,Feb 2026 | Q1,5.88,35.0,205.8,Geneva Annual Report,Feb. 26 Roundtree Invoice.pdf,
-JS-030,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,32.83,35.0,1149.05,Geneva Annual Report,March Roundtree Invoice.pdf,
-JS-031,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,9.13,35.0,319.55,Geneva Annual Report Postcard,March Roundtree Invoice.pdf,
-JS-032,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,1.53,35.0,53.55,Geneva Annual Report Social Post,March Roundtree Invoice.pdf,
-JS-033,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,0.45,35.0,15.75,Geneva Call Package Checklist en español,March Roundtree Invoice.pdf,
-JS-034,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,4.22,35.0,147.7,Geneva Ball Markers,March Roundtree Invoice.pdf,
-JS-035,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,1.93,35.0,67.55,Geneva Spring Campaign Envelope,March Roundtree Invoice.pdf,
-JS-036,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,7.15,35.0,250.25,Geneva Spring Campaign Letter,March Roundtree Invoice.pdf,
-JS-037,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,2.73,35.0,95.55,Geneva Spring Campaign Email,March Roundtree Invoice.pdf,
-JS-038,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,2.6,35.0,91.0,Geneva Folders for Donors and Participants,March Roundtree Invoice.pdf,
-JS-039,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,3.27,35.0,114.45,Geneva Ministry Brief Refresh,March Roundtree Invoice.pdf,
-JS-040,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,2.7,35.0,94.5,Geneva Pastoral Cohorts Large Screen Ad,March Roundtree Invoice.pdf,
-JS-041,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,0.78,35.0,27.3,Geneva 8x8 for GA 2026,March Roundtree Invoice.pdf,
-JS-042,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,6.98,35.0,244.3,Geneva Cohort Explainer,March Roundtree Invoice.pdf,
-JS-043,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,1.72,35.0,60.2,Geneva Tote Bag Insert,March Roundtree Invoice.pdf,
-JS-044,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,3.22,35.0,112.7,Geneva Relief Half Sheet,March Roundtree Invoice.pdf,
-JS-045,Josiah Stam,Mission Increase,Confirmed,2026-03-31,Mar 2026 | Q1,1.43,35.0,50.05,Mi Equipping Call Thumbnail,March Roundtree Invoice.pdf,
-JS-046,Josiah Stam,Mission Increase,Confirmed,2026-03-31,Mar 2026 | Q1,1.33,35.0,46.55,Mi Taste of Mission Increase on Canva,March Roundtree Invoice.pdf,
-JS-047,Josiah Stam,Mission Increase,Confirmed,2026-03-31,Mar 2026 | Q1,0.22,35.0,7.7,Mi Jax Workshop Invite graphic,March Roundtree Invoice.pdf,
-JS-048,Josiah Stam,Geneva,Confirmed,2026-05-23,May 2026 | Q2,0.1,35.0,3.5,Geneva Meeting Norms Tabletop Display,May 26 Roundtree Invoice.pdf,
-JS-049,Josiah Stam,Geneva,Confirmed,2026-05-23,May 2026 | Q2,10.48,35.0,366.8,Geneva Retirement Plan Brochure,May 26 Roundtree Invoice.pdf,
-JS-050,Josiah Stam,Mission Increase,Confirmed,2026-05-23,May 2026 | Q2,6.06,35.0,212.1,Mi Postcards,May 26 Roundtree Invoice.pdf,
-JS-051,Josiah Stam,Mission Increase,Confirmed,2026-05-23,May 2026 | Q2,1.61,35.0,56.35,Mi/ Switchboard/ Alliance Post,May 26 Roundtree Invoice.pdf,
-MH-001,Megan Heath,BITS,Confirmed,2026-02-01,Feb 2026 | Q1,0.25,85.0,21.25,BITS 2025 Prospectus,RoundtreeInvoice_February .pdf,
-MH-002,Megan Heath,BITS,Confirmed,2026-02-01,Feb 2026 | Q1,0.25,85.0,21.25,BITS Envelope Correction,RoundtreeInvoice_February .pdf,
-MH-003,Megan Heath,BITS,Confirmed,2026-02-01,Feb 2026 | Q1,0.5,85.0,42.5,BITS Luncheon 2026,RoundtreeInvoice_February .pdf,
-MH-004,Megan Heath,SETCO,Confirmed,2026-02-01,Feb 2026 | Q1,0.75,85.0,63.75,SETCO Birthday Card,RoundtreeInvoice_February .pdf,
-MH-005,Megan Heath,BITS,Confirmed,2026-02-01,Feb 2026 | Q1,0.5,85.0,42.5,BITS Vector Issue,RoundtreeInvoice_February .pdf,
-MH-006,Megan Heath,BITS,Confirmed,2026-03-01,Mar 2026 | Q1,0.25,85.0,21.25,BITS Vector Issue,RoundtreeInvoice_March.pdf,
-MH-007,Megan Heath,BITS,Confirmed,2026-03-01,Mar 2026 | Q1,0.75,85.0,63.75,BITS Luncheon 2026,RoundtreeInvoice_March.pdf,
-MH-008,Megan Heath,BITS,Confirmed,2026-03-01,Mar 2026 | Q1,1.75,85.0,148.75,BITS Commitment Card 2026,RoundtreeInvoice_March.pdf,
-MH-009,Megan Heath,PCA Foundation,Confirmed,2026-03-01,Mar 2026 | Q1,0.5,85.0,42.5,PCAF Iphone Graphic,RoundtreeInvoice_March.pdf,
-MH-010,Megan Heath,SETCO,Confirmed,2026-03-03,Mar 2026 | Q1,1.5,85.0,127.5,SETCO Table Cloth and Banners,RoundtreeInovice_April.pdf,
-MH-011,Megan Heath,PCA Foundation,Confirmed,2026-03-03,Mar 2026 | Q1,1.0,85.0,85.0,PCAF One Pager,RoundtreeInovice_April.pdf,
-MH-012,Megan Heath,PCA Foundation,Confirmed,2026-03-03,Mar 2026 | Q1,0.5,85.0,42.5,PCAF Business Cards,RoundtreeInovice_April.pdf,
-MH-013,Megan Heath,BITS,Confirmed,2026-03-03,Mar 2026 | Q1,2.5,85.0,212.5,BITS Table Tent and Foam Board Image 2026,RoundtreeInovice_April.pdf,
-MH-014,Megan Heath,BITS,Confirmed,2026-03-03,Mar 2026 | Q1,0.25,85.0,21.25,BITS sponsor banner,RoundtreeInovice_April.pdf,
-MH-015,Megan Heath,BITS,Confirmed,2026-03-03,Mar 2026 | Q1,0.25,85.0,21.25,BITS Sympathy Card,RoundtreeInovice_April.pdf,
-MH-016,Megan Heath,Christ Presbyterian,Confirmed,2026-03-03,Mar 2026 | Q1,9.75,85.0,828.75,Christ Presbyterian Church Profile,RoundtreeInovice_April.pdf,
-MH-017,Megan Heath,Mission Increase,Confirmed,2026-03-03,Mar 2026 | Q1,0.5,85.0,42.5,MI Indiana Addenda,RoundtreeInovice_April.pdf,
-MH-018,Megan Heath,BITS,Confirmed,2026-03-03,Mar 2026 | Q1,0.5,85.0,42.5,BITS Seating Chart,RoundtreeInovice_April.pdf,
-MH-019,Megan Heath,BITS,Confirmed,2026-03-03,Mar 2026 | Q1,1.0,85.0,85.0,BITS Luncheon Program,RoundtreeInovice_April.pdf,
-MH-020,Megan Heath,BITS,Confirmed,2026-03-03,Mar 2026 | Q1,0.25,85.0,21.25,BITS Enrollment Graph Update,RoundtreeInovice_April.pdf,
-MH-021,Megan Heath,byFaith,Confirmed,2026-03-03,Mar 2026 | Q1,2.25,85.0,191.25,byFaith Magazine “The Lamb of God” Graphics/Templates,RoundtreeInovice_April.pdf,
-MH-022,Megan Heath,PCA AC,Confirmed,2026-05-01,May 2026 | Q2,1.25,85.0,106.25,Direct Mail Piece,RoundtreeInvoice_May.pdf,
-MH-023,Megan Heath,BITS,Confirmed,2026-05-01,May 2026 | Q2,0.25,85.0,21.25,BITS Business Card,RoundtreeInvoice_May.pdf,
-MH-024,Megan Heath,PCA Foundation,Confirmed,2026-05-01,May 2026 | Q2,0.5,85.0,42.5,PCAF Response Device Update,RoundtreeInvoice_May.pdf,
-MH-025,Megan Heath,PCA Foundation,Confirmed,2026-05-01,May 2026 | Q2,0.25,85.0,21.25,PCAF Business Cards,RoundtreeInvoice_May.pdf,
-MH-026,Megan Heath,PCA Foundation,Confirmed,2026-05-01,May 2026 | Q2,0.75,85.0,63.75,Response Card - Smart Giving,RoundtreeInvoice_May.pdf,
-MH-027,Megan Heath,PCA Foundation,Confirmed,2026-05-01,May 2026 | Q2,2.5,85.0,212.5,PCAF Serving Churches Trifold,RoundtreeInvoice_May.pdf,
-MH-028,Megan Heath,PCA Foundation,Confirmed,2026-05-01,May 2026 | Q2,0.25,85.0,21.25,Services Workshop,RoundtreeInvoice_May.pdf,
-MH-029,Megan Heath,PCA AC,Confirmed,2026-06-01,Jun 2026 | Q2,0.25,85.0,21.25,Direct Mail Piece,RoundtreeInvoice_June (1).pdf,
-MH-030,Megan Heath,BITS,Confirmed,2026-06-01,Jun 2026 | Q2,0.5,85.0,42.5,BITS Business Card,RoundtreeInvoice_June (1).pdf,
-MH-031,Megan Heath,Mission Increase,Confirmed,2026-06-01,Jun 2026 | Q2,0.25,85.0,21.25,Lee / Comm Ops Guide,RoundtreeInvoice_June (1).pdf,
-MH-032,Megan Heath,PCA Foundation,Confirmed,2026-06-01,Jun 2026 | Q2,2.0,85.0,170.0,PCAF Serving Churches Trifold,RoundtreeInvoice_June (1).pdf,
-MH-033,Megan Heath,Mission Increase,Confirmed,2026-06-01,Jun 2026 | Q2,1.0,85.0,85.0,Becoming Whole Flyer,RoundtreeInvoice_June (1).pdf,
-MH-034,Megan Heath,BITS,Confirmed,2026-06-01,Jun 2026 | Q2,0.5,85.0,42.5,Edits to Commitment Card,RoundtreeInvoice_June (1).pdf,
-MH-035,Megan Heath,Mission Increase,Confirmed,2026-07-01,Jul 2026 | Q3,2.0,85.0,170.0,Mission Increase Dan / Flyer redesign,RoundtreeInvoice_July2026.pdf,
-MH-036,Megan Heath,Mission Increase,Confirmed,2026-07-01,Jul 2026 | Q3,5.25,85.0,446.25,Ashley Shaffer / PPT redesign,RoundtreeInvoice_July2026.pdf,
-MH-037,Megan Heath,BITS,Confirmed,2026-07-01,Jul 2026 | Q3,0.25,85.0,21.25,BITS Envelope Correction,RoundtreeInvoice_July2026.pdf,
-MH-038,Megan Heath,PCA Foundation,Confirmed,2026-07-01,Jul 2026 | Q3,0.75,85.0,63.75,PCAF Business Cards,RoundtreeInvoice_July2026.pdf,
-MH-039,Megan Heath,PCA Foundation,Confirmed,2026-07-01,Jul 2026 | Q3,0.25,85.0,21.25,Logo Resize,RoundtreeInvoice_July2026.pdf,
-MH-040,Megan Heath,BITS,Confirmed,2026-07-01,Jul 2026 | Q3,0.25,85.0,21.25,BITS Graph Edits,RoundtreeInvoice_July2026.pdf,
-MH-041,Megan Heath,BITS,Confirmed,2026-07-01,Jul 2026 | Q3,0.75,85.0,63.75,BITS Letterhead Update,RoundtreeInvoice_July2026.pdf,
-MH-042,Megan Heath,Mission Increase,Confirmed,2026-07-01,Jul 2026 | Q3,1.75,85.0,148.75,MI Impact Report,RoundtreeInvoice_July2026.pdf,
-MH-043,Megan Heath,BITS,Confirmed,2026-07-01,Jul 2026 | Q3,0.5,85.0,42.5,At a Glance 2026,RoundtreeInvoice_July2026.pdf,
-MH-044,Megan Heath,BITS,Confirmed,2026-07-01,Jul 2026 | Q3,0.25,85.0,21.25,Edits to Commitment Card,RoundtreeInvoice_July2026.pdf,
-MH-045,Megan Heath,BITS,Confirmed,2026-07-02,Jul 2026 | Q3,0.5,85.0,42.5,At a Glance 2026,RoundtreeInvoice_August .pdf,
-MH-046,Megan Heath,BITS,Confirmed,2026-07-02,Jul 2026 | Q3,1.75,85.0,148.75,Edits to Commitment Card,RoundtreeInvoice_August .pdf,
-MH-047,Megan Heath,Mission Increase,Confirmed,2026-07-02,Jul 2026 | Q3,1.25,85.0,106.25,MI Placemats,RoundtreeInvoice_August .pdf,
-MH-048,Megan Heath,Mission Increase,Confirmed,2026-07-02,Jul 2026 | Q3,1.0,85.0,85.0,MI Commitment Card,RoundtreeInvoice_August .pdf,
-MH-049,Megan Heath,Mission Increase,Confirmed,2026-07-02,Jul 2026 | Q3,0.5,85.0,42.5,AI MI Position Paper,RoundtreeInvoice_August .pdf,
-MH-050,Megan Heath,Mission Increase,Confirmed,2026-07-02,Jul 2026 | Q3,0.5,85.0,42.5,MI Impact Report,RoundtreeInvoice_August .pdf,
-MH-051,Megan Heath,Mission Increase,Confirmed,2026-07-02,Jul 2026 | Q3,0.75,85.0,63.75,MI Charity One Pager,RoundtreeInvoice_August .pdf,
-MH-052,Megan Heath,Mission Increase,Confirmed,2026-07-02,Jul 2026 | Q3,1.25,85.0,106.25,Becoming Whole Flyers,RoundtreeInvoice_August .pdf,
-MH-053,Megan Heath,BITS,Confirmed,2026-07-02,Jul 2026 | Q3,0.25,85.0,21.25,BITS Map Update,RoundtreeInvoice_August .pdf,
-MH-054,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,1.0,85.0,85.0,CAFO Mission Increase AD,RoundtreeInvoice_September2026.pdf,
-MH-055,Megan Heath,Geneva,Confirmed,2026-09-01,Sep 2026 | Q3,1.0,85.0,85.0,Geneva Dental Slip Sheet,RoundtreeInvoice_September2026.pdf,
-MH-056,Megan Heath,Geneva,Confirmed,2026-09-01,Sep 2026 | Q3,0.5,85.0,42.5,Geneva Envelope Edits,RoundtreeInvoice_September2026.pdf,
-MH-057,Megan Heath,BITS,Confirmed,2026-09-01,Sep 2026 | Q3,0.25,85.0,21.25,BITS Letterhead Update,RoundtreeInvoice_September2026.pdf,
-MH-058,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,1.25,85.0,106.25,MI Academy One Pager,RoundtreeInvoice_September2026.pdf,
-MH-059,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,1.5,85.0,127.5,MI Hanging Banner,RoundtreeInvoice_September2026.pdf,
-MH-060,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,0.25,85.0,21.25,Becoming Whole Flyers,RoundtreeInvoice_September2026.pdf,
-MH-061,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,1.5,85.0,127.5,MI Academy Foundation Powerpoint,RoundtreeInvoice_September2026.pdf,
-MH-062,Megan Heath,Village Schools International,Confirmed,2026-09-01,Sep 2026 | Q3,1.25,85.0,106.25,Village School Cards,RoundtreeInvoice_September2026.pdf,
-MH-063,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,1.0,85.0,85.0,Dan / Mi Champion 2 pager,RoundtreeInvoice_September2026.pdf,
-MH-064,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,0.75,85.0,63.75,MI Map Graphic,RoundtreeInvoice_September2026.pdf,
-MH-065,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,0.25,85.0,21.25,MI Letterhead,RoundtreeInvoice_September2026.pdf,
-MH-066,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,0.25,85.0,21.25,MI CAFO QR Code Flyer,RoundtreeInvoice_September2026.pdf,
-MH-067,Megan Heath,BITS,Confirmed,2026-09-01,Sep 2026 | Q3,0.5,85.0,42.5,BITS State Map Update,RoundtreeInvoice_September2026.pdf,
-MH-068,Megan Heath,Geneva,Confirmed,2026-09-01,Sep 2026 | Q3,1.75,85.0,148.75,Geneva Social Graphics,RoundtreeInvoice_September2026.pdf,
-MH-069,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,1.25,85.0,106.25,MI Distilled Champion Two Pager,RoundtreeInvoice_September2026.pdf,
-MH-070,Megan Heath,Geneva,Confirmed,2026-09-01,Sep 2026 | Q3,0.75,85.0,63.75,Geneva Folder Update,RoundtreeInvoice_September2026.pdf,
-MH-071,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,0.5,85.0,42.5,Re-creation of Gratitude gathering collateral,RoundtreeInvoice_September2026.pdf,
-MH-072,Megan Heath,Mission Increase,Confirmed,2026-10-01,Oct 2026 | Q4,0.5,85.0,42.5,Geoff / Mi Academy 2-pager,RoundtreeInvoice_October2026.pdf,
-MH-073,Megan Heath,Geneva,Confirmed,2026-10-01,Oct 2026 | Q4,0.75,85.0,63.75,Geneva Case for Support Updates,RoundtreeInvoice_October2026.pdf,
-MH-074,Megan Heath,Mission Increase,Confirmed,2026-10-01,Oct 2026 | Q4,0.25,85.0,21.25,MI Impact Report,RoundtreeInvoice_October2026.pdf,
-MH-075,Megan Heath,Geneva,Confirmed,2026-10-01,Oct 2026 | Q4,3.0,85.0,255.0,Geneva Appeal Letter Design,RoundtreeInvoice_October2026.pdf,
-MH-076,Megan Heath,byFaith,Confirmed,2026-10-01,Oct 2026 | Q4,0.75,85.0,63.75,byFaith Social Template,RoundtreeInvoice_October2026.pdf,
-MH-077,Megan Heath,BITS,Confirmed,2026-10-01,Oct 2026 | Q4,0.5,85.0,42.5,BITS Christmas Card Update,RoundtreeInvoice_October2026.pdf,
-MH-078,Megan Heath,Geneva,Confirmed,2026-10-01,Oct 2026 | Q4,0.75,85.0,63.75,Geneva Clergy Act Social Post,RoundtreeInvoice_October2026.pdf,
-MH-079,Megan Heath,BITS,Confirmed,2026-10-01,Oct 2026 | Q4,0.5,85.0,42.5,BITS Luncheon Save the Date 2027,RoundtreeInvoice_October2026.pdf,
-MH-080,Megan Heath,BITS,Confirmed,2026-10-01,Oct 2026 | Q4,0.5,85.0,42.5,BITS E-Signature,RoundtreeInvoice_October2026.pdf,
-MH-081,Megan Heath,Mission Increase,Confirmed,2026-10-01,Oct 2026 | Q4,1.0,85.0,85.0,Re-creation of Gratitude gathering collateral,RoundtreeInvoice_October2026.pdf,
-MH-082,Megan Heath,SETCO,Confirmed,2026-10-01,Oct 2026 | Q4,0.25,85.0,21.25,SETCO Nutcracker Ad,RoundtreeInvoice_October2026.pdf,
-JR-001,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Dec 2025/Q1,2.5,125.0,312.5,"Dec 23, 2025 Mission Increase email redesign",Invoice 0000068.pdf,
-JR-002,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,1.0,125.0,125.0,"Feb 10, 2026 Email template redesign changes",Invoice 0000068.pdf,
-JR-003,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,7.0,100.0,700.0,"Feb 11, 2026 Impact Stories PDF, Archive, Post Template",Invoice 0000068.pdf,
-JR-004,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,0.25,100.0,25.0,"Feb 16, 2026 Impact Stories PDF, Archive, Post Template",Invoice 0000068.pdf,
-JR-005,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,0.25,125.0,31.25,"Feb 16, 2026 Update MI email header image",Invoice 0000068.pdf,
-JR-006,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,1.0,125.0,125.0,"Feb 18, 2026 Mission Increase – Website impact stories",Invoice 0000068.pdf,
-JR-007,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,5.7167,125.0,714.59,"Feb 19, 2026 Mission Increase – Website impact stories",Invoice 0000068.pdf,
-JR-008,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,1.1833,125.0,147.91,"Feb 20, 2026 Mission Increase – Website impact stories",Invoice 0000068.pdf,
-JR-009,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,1.3333,100.0,133.33,"Feb 23, 2026 Mission Increase Gratitude Report Edits",Invoice 0000068.pdf,
-JR-010,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,0.4833,100.0,48.33,"Feb 24, 2026 Mission Increase Gratitude Report Edits",Invoice 0000068.pdf,
-JR-011,Jared Roberts,Langham,Confirmed,2026-03-02,Feb 2026 | Q1,1.0,100.0,100.0,"Feb 25, 2026 Room Visuals https://app.asana.com/1/37620507411956/task/1213371770361244?focus=true",Invoice 0000068.pdf,
-JR-012,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,0.25,100.0,25.0,"Feb 26, 2026 Mission Increase Gratitude Report Edits",Invoice 0000068.pdf,
-JR-013,Jared Roberts,Langham,Confirmed,2026-03-02,Feb 2026 | Q1,0.25,100.0,25.0,"Feb 26, 2026 Room Visuals https://app.asana.com/1/37620507411956/task/1213371770361244?focus=true",Invoice 0000068.pdf,
-JR-014,Jared Roberts,Langham,Confirmed,2026-03-02,Feb 2026 | Q1,0.2667,100.0,26.67,"Feb 26, 2026 VW Booklet Edits https://app.asana.com/1/37620507411956/task/1213454741094577?focus=true",Invoice 0000068.pdf,
-JR-015,Jared Roberts,PCA Foundation,Confirmed,2026-03-02,Feb 2026 | Q1,0.25,100.0,25.0,"Feb 27, 2026 Review PCA foundation plugins https://app.asana.com/1/37620507411956/project/1210134537448739/task/1213459599619533?focus=true",Invoice 0000068.pdf,
-JR-016,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.25,100.0,25.0,"Mar 2, 2026 Remove dashes https://app.asana.com/1/37620507411956/project/1212307186977426/task/1212308211581205?focus=true",Invoice 0000073.pdf,
-JR-017,Jared Roberts,Langham,Confirmed,2026-04-02,Mar 2026 | Q1,0.25,100.0,25.0,"Mar 2, 2026 https://app.asana.com/1/37620507411956/task/1213454741094577?focus=true",Invoice 0000073.pdf,
-JR-018,Jared Roberts,Langham,Confirmed,2026-04-02,Mar 2026 | Q1,0.25,100.0,25.0,"Mar 3, 2026 Update bios – finalize files https://app.asana.com/1/37620507411956/project/1212307186977426/task/1212308211581205?focus=true",Invoice 0000073.pdf,
-JR-019,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.25,125.0,31.25,"Mar 4, 2026 Center text Remove Share post footer https://app.asana.com/1/37620507411956/task/1213436867897920?focus=true",Invoice 0000073.pdf,
-JR-020,Jared Roberts,Langham,Confirmed,2026-04-02,Mar 2026 | Q1,0.25,100.0,25.0,"Mar 5, 2026 Update headshot and export https://drive.google.com/drive/folders/1Dq1bBhiyOp_9TCrKE7rR-7_yNoyFkDnl?usp=sharing",Invoice 0000073.pdf,
-JR-021,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.25,100.0,25.0,"Mar 6, 2026 MI to Mi and export https://drive.google.com/drive/folders/1Dq1bBhiyOp_9TCrKE7rR-7_yNoyFkDnl?usp=sharing",Invoice 0000073.pdf,
-JR-022,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.5,100.0,50.0,"Mar 6, 2026 https://app.asana.com/1/37620507411956/project/1212307186977426/task/1213556959083076?focus=true",Invoice 0000073.pdf,
-JR-023,Jared Roberts,Saturate,Confirmed,2026-04-02,Mar 2026 | Q1,4.5,125.0,562.5,"Mar 9, 2026 Saturate Design",Invoice 0000073.pdf,
-JR-024,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.75,125.0,93.75,"Mar 10, 2026 https://app.asana.com/1/37620507411956/project/1212307186977426/task/1213466319464884?focus=true",Invoice 0000073.pdf,
-JR-025,Jared Roberts,Saturate,Confirmed,2026-04-02,Mar 2026 | Q1,4.0,125.0,500.0,"Mar 10, 2026 Saturate Design",Invoice 0000073.pdf,
-JR-026,Jared Roberts,Saturate,Confirmed,2026-04-02,Mar 2026 | Q1,5.7333,125.0,716.66,"Mar 11, 2026 Saturate Design",Invoice 0000073.pdf,
-JR-027,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.5,125.0,62.5,"Mar 16, 2026 Make a 4-column grid, update offset logic https://app.asana.com/1/37620507411956/task/1213368710014671?focus=true",Invoice 0000073.pdf,
-JR-028,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.55,125.0,68.75,"Mar 16, 2026 Finalize MI email redesign https://app.asana.com/1/37620507411956/task/1213103302790600?focus=true",Invoice 0000073.pdf,
-JR-029,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.25,125.0,31.25,"Mar 16, 2026 Style vimeo embed https://app.asana.com/1/37620507411956/task/1213436867897920?focus=true",Invoice 0000073.pdf,
-JR-030,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.75,125.0,93.75,"Mar 18, 2026 MI Emails https://app.asana.com/1/37620507411956/task/1213103302790600?focus=true",Invoice 0000073.pdf,
-JR-031,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.25,125.0,31.25,"Mar 31, 2026 Mission Increase – impact stories",Invoice 0000073.pdf,
-JR-032,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.5,125.0,62.5,"Mar 31, 2026 Mission Increase – Impact stories parent navigation logic updates",Invoice 0000073.pdf,
-JR-033,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Apr 2026 | Q2,0.25,125.0,31.25,"Apr 2, 2026 Email template updates https://app.asana.com/1/37620507411956/task/1213103302790600/comment/1213898272512503?focus=true",Invoice 0000073.pdf,
-JR-034,Jared Roberts,Mission Increase,Confirmed,2026-05-03,Apr 2026 | Q2,1.5,125.0,187.5,"Apr 8, 2026 Mission Increase Menu fixes https://app.asana.com/1/37620507411956/task/1213871915151939?focus=true",Invoice 0000080.pdf,
-JR-035,Jared Roberts,Mission Increase,Confirmed,2026-05-03,Apr 2026 | Q2,4.0,125.0,500.0,"Apr 8, 2026 Mission Increase Resources Page redesign/rebuild https://app.asana.com/1/37620507411956/task/1213871915151887?focus=true",Invoice 0000080.pdf,
-JR-036,Jared Roberts,Mission Increase,Confirmed,2026-05-03,Apr 2026 | Q2,2.75,100.0,275.0,"Apr 11, 2026 Mission Increase One Pagers https://app.asana.com/1/37620507411956/task/1213995116284960?focus=true and 1213995116284968",Invoice 0000080.pdf,
-JR-037,Jared Roberts,Mission Increase,Confirmed,2026-05-03,Apr 2026 | Q2,2.6333,100.0,263.33,"Apr 13, 2026 https://app.asana.com/1/37620507411956/task/1213995116284982?focus=true",Invoice 0000080.pdf,
-JR-038,Jared Roberts,Mission Increase,Confirmed,2026-05-03,Apr 2026 | Q2,1.0,125.0,125.0,"Apr 22, 2026 Resources page updates https://app.asana.com/1/37620507411956/task/1214134594441480?focus=true and 1214134697784101",Invoice 0000080.pdf,
-JR-039,Jared Roberts,Mission Increase,Confirmed,2026-05-03,Apr 2026 | Q2,1.0,125.0,125.0,"Apr 23, 2026 Create laptop mockups, add images to resources page",Invoice 0000080.pdf,
-JR-040,Jared Roberts,Mission Increase,Confirmed,2026-05-03,Apr 2026 | Q2,0.25,125.0,31.25,"Apr 30, 2026 https://app.asana.com/1/37620507411956/task/1214384921366717 and 1214385436356652",Invoice 0000080.pdf,
-JR-041,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,0.25,125.0,31.25,"May 6, 2026 https://app.asana.com/1/37620507411956/task/1214445383972349?focus=true",Invoice 0000081.pdf,
-JR-042,Jared Roberts,PCA Foundation,Confirmed,2026-06-01,May 2026 | Q2,4.0,100.0,400.0,"May 11, 2026 Complex gifts",Invoice 0000081.pdf,
-JR-043,Jared Roberts,PCA Foundation,Confirmed,2026-06-01,May 2026 | Q2,0.75,100.0,75.0,"May 15, 2026 Complex gifts",Invoice 0000081.pdf,
-JR-044,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,2.0,100.0,200.0,"May 18, 2026 Core Services PDF",Invoice 0000081.pdf,
-JR-045,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,1.0,100.0,100.0,"May 19, 2026 Core Services PDF",Invoice 0000081.pdf,
-JR-046,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,1.25,125.0,156.25,"May 20, 2026 https://app.asana.com/1/37620507411956/task/1214963922075191?focus=true",Invoice 0000081.pdf,
-JR-047,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,0.25,125.0,31.25,"May 21, 2026 https://app.asana.com/1/37620507411956/task/1214963922075191?focus=true",Invoice 0000081.pdf,
-JR-048,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,0.25,125.0,31.25,"May 22, 2026 https://app.asana.com/1/37620507411956/task/1214963922075191?focus=true",Invoice 0000081.pdf,
-JR-049,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,4.5,125.0,562.5,"May 23, 2026 Build figma mockups as cut-up html https://app.asana.com/1/37620507411956/task/1214735299665561?focus=true",Invoice 0000081.pdf,
-JR-050,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,0.25,100.0,25.0,"May 27, 2026 https://app.asana.com/1/37620507411956/project/1213269125900055/task/1214735299665540?focus=true",Invoice 0000081.pdf,
-JR-051,Jared Roberts,PCA Foundation,Confirmed,2026-06-01,May 2026 | Q2,1.75,100.0,175.0,"May 28, 2026 https://app.asana.com/1/37620507411956/task/1213910482331483?focus=true",Invoice 0000081.pdf,
-JR-052,Jared Roberts,PCA Foundation,Confirmed,2026-06-01,May 2026 | Q2,0.25,100.0,25.0,"May 30, 2026 https://app.asana.com/1/37620507411956/task/1214575150867482?focus=true",Invoice 0000081.pdf,
-JR-053,Jared Roberts,PCA Foundation,Confirmed,2026-06-01,May 2026 | Q2,0.25,100.0,25.0,"May 30, 2026 https://app.asana.com/1/37620507411956/project/1213317067356452/task/1213910482331483?focus=true",Invoice 0000081.pdf,
-JR-054,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,0.5,100.0,50.0,"May 30, 2026 https://app.asana.com/1/37620507411956/task/1214109157683003?focus=true",Invoice 0000081.pdf,
-JR-055,Jared Roberts,Mission Increase,Confirmed,2026-06-01,Jun 2026 | Q2,0.25,100.0,25.0,"Jun 1, 2026 https://app.asana.com/1/37620507411956/project/1212991151453491/task/1214109157683003?focus=true",Invoice 0000081.pdf,
-JR-056,Jared Roberts,PCA Foundation,Confirmed,2026-07-09,Jun 2026 | Q2,0.5,100.0,50.0,"Jun 2, 2026 https://app.asana.com/1/37620507411956/task/1214575150867482?focus=true",Invoice 0000084.pdf,
-JR-057,Jared Roberts,PCA Foundation,Confirmed,2026-07-09,Jun 2026 | Q2,0.25,100.0,25.0,"Jun 3, 2026 https://app.asana.com/1/37620507411956/task/1213910482331483?focus=true",Invoice 0000084.pdf,
-JR-058,Jared Roberts,Mission Increase,Confirmed,2026-07-09,Jun 2026 | Q2,3.75,125.0,468.75,"Jun 4, 2026 https://app.asana.com/1/37620507411956/task/1214253934020309?focus=true",Invoice 0000084.pdf,
-JR-059,Jared Roberts,PCA AC,Confirmed,2026-07-09,Jun 2026 | Q2,0.75,125.0,93.75,"Jun 8, 2026 Troubleshooting https://app.asana.com/1/37620507411956/task/1214631315405443?focus=true",Invoice 0000084.pdf,
-JR-060,Jared Roberts,Mission Increase,Confirmed,2026-07-09,Jun 2026 | Q2,1.0,100.0,100.0,"Jun 8, 2026 Time https://app.asana.com/1/37620507411956/task/1215462113663928?focus=true",Invoice 0000084.pdf,
-JR-061,Jared Roberts,Mission Increase,Confirmed,2026-07-09,Jun 2026 | Q2,0.5,100.0,50.0,"Jun 11, 2026 https://app.asana.com/1/37620507411956/project/1210675302997600/task/1215498512680809?focus=true",Invoice 0000084.pdf,
-JR-062,Jared Roberts,Mission Increase,Confirmed,2026-07-09,Jun 2026 | Q2,0.75,100.0,75.0,"Jun 12, 2026 https://app.asana.com/1/37620507411956/project/1212991151453491/task/1214109157683003?focus=true",Invoice 0000084.pdf,
-JR-063,Jared Roberts,Unconfirmed (Needs Review),⚠️ FLAGGED,2026-07-09,Jun 2026 | Q2,0.5,125.0,62.5,"Jun 16, 2026 Web Development",Invoice 0000084.pdf,PM Confirmed: Unknown client assignment
-JR-064,Jared Roberts,Mission Increase,Confirmed,2026-07-09,Jun 2026 | Q2,2.0,100.0,200.0,"Jun 25, 2026 Graphic Design https://app.asana.com/1/37620507411956/project/1213103545531663/task/1215498512680913 and 1215498512680911",Invoice 0000084.pdf,
-JR-065,Jared Roberts,Mission Increase,Confirmed,2026-07-09,Jul 2026 | Q3,0.75,125.0,93.75,"Jul 3, 2026 https://app.asana.com/1/37620507411956/project/1212991151453491/task/1215585965635292?focus=true",Invoice 0000084.pdf,
-JR-066,Jared Roberts,Mission Increase,Confirmed,2026-08-03,Jul 2026 | Q3,0.5,100.0,50.0,"Jul 10, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1216149027591067?focus=true",Invoice 0000087.pdf,
-JR-067,Jared Roberts,Mission Increase,Confirmed,2026-08-03,Jul 2026 | Q3,1.0,100.0,100.0,"Jul 14, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1216388487881036",Invoice 0000087.pdf,
-JR-068,Jared Roberts,Mission Increase,Confirmed,2026-08-03,Jul 2026 | Q3,0.5,100.0,50.0,"Jul 15, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1216573279689838?focus=true",Invoice 0000087.pdf,
-JR-069,Jared Roberts,Mission Increase,Confirmed,2026-08-03,Jul 2026 | Q3,0.5,125.0,62.5,"Jul 20, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1216727722807145?focus=true",Invoice 0000087.pdf,
-JR-070,Jared Roberts,Mission Increase,Confirmed,2026-08-03,Jul 2026 | Q3,0.5,125.0,62.5,"Jul 24, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1216798967581642?focus=true",Invoice 0000087.pdf,
-JR-071,Jared Roberts,Rock Creek,Confirmed,2026-08-03,Jul 2026 | Q3,1.0,125.0,125.0,"Jul 24, 2026 Troubleshoot Rock Creek broken design",Invoice 0000087.pdf,
-JR-072,Jared Roberts,Mission Increase,Confirmed,2026-08-03,Jul 2026 | Q3,0.5,100.0,50.0,"Jul 28, 2026 Mi Academy PDF Updates",Invoice 0000087.pdf,
-JR-073,Jared Roberts,Mission Increase,Confirmed,2026-09-03,Aug 2026 | Q3,3.5,100.0,350.0,"Aug 15, 2026 Slide Deck",Invoice 0000096.pdf,Q3 deck redesign
-JR-074,Jared Roberts,Mission Increase,Confirmed,2026-09-03,Aug 2026 | Q3,1.0,100.0,100.0,"Aug 18, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1215498512680913?focus=true",Invoice 0000096.pdf,
-JR-075,Jared Roberts,Mission Increase,Confirmed,2026-09-03,Aug 2026 | Q3,1.0,125.0,125.0,"Aug 31, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1217274518256239?focus=true",Invoice 0000096.pdf,
-JR-076,Jared Roberts,Mission Increase,Confirmed,2026-09-03,Sep 2026 | Q3,1.5,100.0,150.0,"Sep 3, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1215498512680911?focus=true",Invoice 0000096.pdf,
-JR-077,Jared Roberts,Mission Increase,Confirmed,2026-09-03,Sep 2026 | Q3,1.5,100.0,150.0,"Sep 3, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1215498512680913?focus=true",Invoice 0000096.pdf,
-JR-078,Jared Roberts,Mission Increase,Confirmed,2026-09-03,Sep 2026 | Q3,0.75,125.0,93.75,"Sep 3, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1217781416553046?focus=true",Invoice 0000096.pdf,
+Item ID,Contractor Name,Client Account,Status,Work Date / Invoice Date,Month & Quarter,Hours,Hourly Rate ($),Total Billed Amount ($),Exact Verbatim Invoice Task Description,Source Invoice File Name,PM Notes / Reconciliation Rationale,Quarter,Month,Year
+GP-019,Grace Parker,Mission Increase,Confirmed,2026-01-09,2026-01 | Q1,0.17,95.0,16.15,Edit Carlos Pena headshot - Mi [Project: Project Requests],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-01-09 to 2026-01-09 (1 entries),Q1 2026 (Jan - Mar),2026-01,2026
+MK-001,Molly Kelley,Mission Increase,Confirmed,2026-01-09,Jan 2026 | Q1,2.25,60.0,135.0,"Mission Increase Jacksonville, Asset Buildout (table tent, notecards, retractable banner)",Invoice_MollyKelley_1.9.26 - Invoice.pdf,,Q1 2026 (Jan - Mar),2026-01,2026
+GP-020,Grace Parker,Mission Increase,Confirmed,2026-01-22,2026-01 | Q1,0.3,95.0,28.5,Edit Ray Strickland Headshot [Project: Project Requests],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-01-22 to 2026-01-22 (1 entries),Q1 2026 (Jan - Mar),2026-01,2026
+GP-003,Grace Parker,Mission Increase,Confirmed,2026-01-23,2026-01 | Q1,0.42,95.0,39.9,Andy / Green Mi UK logo  [Project: Project Requests],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-01-20 to 2026-01-23 (3 entries),Q1 2026 (Jan - Mar),2026-01,2026
+GP-031,Grace Parker,Mission Increase,Confirmed,2026-01-28,2026-01 | Q1,0.05,95.0,4.75,Mi Marks Update [Project: Project Requests],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-01-28 to 2026-01-28 (1 entries),Q1 2026 (Jan - Mar),2026-01,2026
+CC-001,Casper Co. LLC,Geneva,Confirmed,2026-01-29,Jan 2026 | Q1,2.0,145.0,290.0,Geneva Story - Elizabeth,Casper Co. LLC - Roundtree - Jan 2026 invoice.pdf,,Q1 2026 (Jan - Mar),2026-01,2026
+CC-002,Casper Co. LLC,Geneva,Confirmed,2026-01-29,Jan 2026 | Q1,2.0,145.0,290.0,Geneva Story - Adam,Casper Co. LLC - Roundtree - Jan 2026 invoice.pdf,,Q1 2026 (Jan - Mar),2026-01,2026
+GP-024,Grace Parker,Geneva,Confirmed,2026-01-29,2026-01 | Q1,0.82,95.0,77.9,Geneva- Relief Impact PDF [Project: Digital Design - Geneva],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-01-26 to 2026-01-29 (3 entries),Q1 2026 (Jan - Mar),2026-01,2026
+MH-001,Megan Heath,BITS,Confirmed,2026-02-01,Feb 2026 | Q1,0.25,85.0,21.25,BITS 2025 Prospectus,RoundtreeInvoice_February .pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+MH-002,Megan Heath,BITS,Confirmed,2026-02-01,Feb 2026 | Q1,0.25,85.0,21.25,BITS Envelope Correction,RoundtreeInvoice_February .pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+MH-003,Megan Heath,BITS,Confirmed,2026-02-01,Feb 2026 | Q1,0.5,85.0,42.5,BITS Luncheon 2026,RoundtreeInvoice_February .pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+MH-004,Megan Heath,SETCO,Confirmed,2026-02-01,Feb 2026 | Q1,0.75,85.0,63.75,SETCO Birthday Card,RoundtreeInvoice_February .pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+MH-005,Megan Heath,BITS,Confirmed,2026-02-01,Feb 2026 | Q1,0.5,85.0,42.5,BITS Vector Issue,RoundtreeInvoice_February .pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-001,Josiah Stam,Mission Increase,Confirmed,2026-02-02,Jan 2026 | Q1,0.55,35.0,19.25,Mi Area Director Training Graphic,Jan. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-002,Josiah Stam,Mission Increase,Confirmed,2026-02-02,Jan 2026 | Q1,6.42,35.0,224.7,Mi Giving Levels Doc Redesign,Jan. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-003,Josiah Stam,Mission Increase,Confirmed,2026-02-02,Jan 2026 | Q1,0.83,35.0,29.05,Mi Media Kit,Jan. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-004,Josiah Stam,Mission Increase,Confirmed,2026-02-02,Jan 2026 | Q1,1.93,35.0,67.55,Mi Taste of Mission Increase February 2026,Jan. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-005,Josiah Stam,Mission Increase,Confirmed,2026-02-02,Jan 2026 | Q1,3.58,35.0,125.3,Mi Academy Mark,Jan. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-006,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,3.75,35.0,131.25,Geneva Tabletop Canvases,Jan. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-007,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,6.27,35.0,219.45,Geneva Monthly Giving Campaign Postcard,Jan. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-008,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,3.07,35.0,107.45,Geneva Sustainers Logo,Jan. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-009,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,1.83,35.0,64.05,Geneva Monthly Givers Infographic,Jan. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-010,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,1.5,35.0,52.5,Geneva Table Runner,Jan. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-011,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,1.5,35.0,52.5,Geneva Business Cards,Jan. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-012,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,2.58,35.0,90.3,Geneva Tabletop Banner,Jan. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-013,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,1.63,35.0,57.05,Geneva Retractable Banner,Jan. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-014,Josiah Stam,Geneva,Confirmed,2026-02-02,Jan 2026 | Q1,2.55,35.0,89.25,Geneva Sustainers Email Graphics,Jan. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-015,Josiah Stam,BLMH,Confirmed,2026-02-02,Jan 2026 | Q1,0.52,35.0,18.2,BLMH Business Card,Jan. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+GP-035,Grace Parker,Mission Increase,Confirmed,2026-02-11,2026-02 | Q1,1.44,95.0,136.8,Sarah / Feb 2026 Team Gathering [Project: Project Requests],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-01-27 to 2026-02-11 (5 entries),Q1 2026 (Jan - Mar),2026-02,2026
+GP-002,Grace Parker,Mission Increase,Confirmed,2026-02-19,2026-02 | Q1,0.22,95.0,20.9,Amber / State Addenda - Virginia [Project: Project Requests],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-02-16 to 2026-02-19 (2 entries),Q1 2026 (Jan - Mar),2026-02,2026
+GP-012,Grace Parker,TGT,Confirmed,2026-02-19,2026-02 | Q1,1.05,95.0,99.75,Design 2025 by the Numbers [Project: Monthly Digital Content - TGT],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-02-02 to 2026-02-19 (2 entries),Q1 2026 (Jan - Mar),2026-02,2026
+GP-025,Grace Parker,Mission Increase,Confirmed,2026-02-20,2026-02 | Q1,1.68,95.0,159.6,Icon color needs updating [Project: Mi Bugherd Website Edits],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-02-19 to 2026-02-20 (2 entries),Q1 2026 (Jan - Mar),2026-02,2026
+MK-002,Molly Kelley,Mission Increase,Confirmed,2026-02-26,Feb 2026 | Q1,15.5,60.0,930.0,Mission Increase (Gratitude Report),Invoice_MollyKelley_2.26.26 - Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+MK-003,Molly Kelley,Langham,Confirmed,2026-02-26,Feb 2026 | Q1,6.5,60.0,390.0,Langham (Cultivate Draft),Invoice_MollyKelley_2.26.26 - Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+CC-003,Casper Co. LLC,Geneva,Confirmed,2026-02-27,Feb 2026 | Q1,3.0,145.0,435.0,Geneva - Susan Story,Casper Co. LLC - Roundtree Invoice - Feb 2026.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+CC-004,Casper Co. LLC,Geneva,Confirmed,2026-02-27,Feb 2026 | Q1,2.0,145.0,290.0,Geneva - Living Generously Booklet,Casper Co. LLC - Roundtree Invoice - Feb 2026.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-016,Josiah Stam,BLMH,Confirmed,2026-02-27,Feb 2026 | Q1,0.08,35.0,2.8,BLMH Business Card,Feb. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-017,Josiah Stam,BITS,Confirmed,2026-02-27,Feb 2026 | Q1,1.0,35.0,35.0,Bible In The Schools Prospectus,Feb. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-018,Josiah Stam,Mission Increase,Confirmed,2026-02-27,Feb 2026 | Q1,0.55,35.0,19.25,Mi Academy Badge,Feb. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-019,Josiah Stam,Mission Increase,Confirmed,2026-02-27,Feb 2026 | Q1,0.57,35.0,19.95,Mi Core Webinars/ Workshops Badge,Feb. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-020,Josiah Stam,Mission Increase,Confirmed,2026-02-27,Feb 2026 | Q1,0.7,35.0,24.5,Mi Team Photo Update,Feb. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-021,Josiah Stam,Mission Increase,Confirmed,2026-02-27,Feb 2026 | Q1,5.25,35.0,183.75,Mi Momentum Multiplied Slides,Feb. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-022,Josiah Stam,Mission Increase,Confirmed,2026-02-27,Feb 2026 | Q1,11.3,35.0,395.5,Mi Donor Pitch Deck,Feb. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-023,Josiah Stam,Mission Increase,Confirmed,2026-02-27,Feb 2026 | Q1,2.45,35.0,85.75,Mi Specialized Email Design,Feb. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-024,Josiah Stam,Mission Increase,Confirmed,2026-02-27,Feb 2026 | Q1,1.85,35.0,64.75,Mi TG10,Feb. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-025,Josiah Stam,Geneva,Confirmed,2026-02-27,Feb 2026 | Q1,1.38,35.0,48.3,Geneva New & Existing Donor Letters,Feb. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-026,Josiah Stam,Geneva,Confirmed,2026-02-27,Feb 2026 | Q1,1.5,35.0,52.5,Geneva Welcome Gift Envelope,Feb. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-027,Josiah Stam,Geneva,Confirmed,2026-02-27,Feb 2026 | Q1,4.77,35.0,166.95,Geneva Golf Tournament Graphics,Feb. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-028,Josiah Stam,Geneva,Confirmed,2026-02-27,Feb 2026 | Q1,1.65,35.0,57.75,Geneva Call Package Checklist en español,Feb. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+JS-029,Josiah Stam,Geneva,Confirmed,2026-02-27,Feb 2026 | Q1,5.88,35.0,205.8,Geneva Annual Report,Feb. 26 Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-02,2026
+MH-006,Megan Heath,BITS,Confirmed,2026-03-01,Mar 2026 | Q1,0.25,85.0,21.25,BITS Vector Issue,RoundtreeInvoice_March.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+MH-007,Megan Heath,BITS,Confirmed,2026-03-01,Mar 2026 | Q1,0.75,85.0,63.75,BITS Luncheon 2026,RoundtreeInvoice_March.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+MH-008,Megan Heath,BITS,Confirmed,2026-03-01,Mar 2026 | Q1,1.75,85.0,148.75,BITS Commitment Card 2026,RoundtreeInvoice_March.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+MH-009,Megan Heath,PCA Foundation,Confirmed,2026-03-01,Mar 2026 | Q1,0.5,85.0,42.5,PCAF Iphone Graphic,RoundtreeInvoice_March.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JR-001,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Dec 2025/Q1,2.5,125.0,312.5,"Dec 23, 2025 Mission Increase email redesign",Invoice 0000068.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JR-002,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,1.0,125.0,125.0,"Feb 10, 2026 Email template redesign changes",Invoice 0000068.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JR-003,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,7.0,100.0,700.0,"Feb 11, 2026 Impact Stories PDF, Archive, Post Template",Invoice 0000068.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JR-004,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,0.25,100.0,25.0,"Feb 16, 2026 Impact Stories PDF, Archive, Post Template",Invoice 0000068.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JR-005,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,0.25,125.0,31.25,"Feb 16, 2026 Update MI email header image",Invoice 0000068.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JR-006,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,1.0,125.0,125.0,"Feb 18, 2026 Mission Increase – Website impact stories",Invoice 0000068.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JR-007,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,5.7167,125.0,714.59,"Feb 19, 2026 Mission Increase – Website impact stories",Invoice 0000068.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JR-008,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,1.1833,125.0,147.91,"Feb 20, 2026 Mission Increase – Website impact stories",Invoice 0000068.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JR-009,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,1.3333,100.0,133.33,"Feb 23, 2026 Mission Increase Gratitude Report Edits",Invoice 0000068.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JR-010,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,0.4833,100.0,48.33,"Feb 24, 2026 Mission Increase Gratitude Report Edits",Invoice 0000068.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JR-011,Jared Roberts,Langham,Confirmed,2026-03-02,Feb 2026 | Q1,1.0,100.0,100.0,"Feb 25, 2026 Room Visuals https://app.asana.com/1/37620507411956/task/1213371770361244?focus=true",Invoice 0000068.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JR-012,Jared Roberts,Mission Increase,Confirmed,2026-03-02,Feb 2026 | Q1,0.25,100.0,25.0,"Feb 26, 2026 Mission Increase Gratitude Report Edits",Invoice 0000068.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JR-013,Jared Roberts,Langham,Confirmed,2026-03-02,Feb 2026 | Q1,0.25,100.0,25.0,"Feb 26, 2026 Room Visuals https://app.asana.com/1/37620507411956/task/1213371770361244?focus=true",Invoice 0000068.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JR-014,Jared Roberts,Langham,Confirmed,2026-03-02,Feb 2026 | Q1,0.2667,100.0,26.67,"Feb 26, 2026 VW Booklet Edits https://app.asana.com/1/37620507411956/task/1213454741094577?focus=true",Invoice 0000068.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JR-015,Jared Roberts,PCA Foundation,Confirmed,2026-03-02,Feb 2026 | Q1,0.25,100.0,25.0,"Feb 27, 2026 Review PCA foundation plugins https://app.asana.com/1/37620507411956/project/1210134537448739/task/1213459599619533?focus=true",Invoice 0000068.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+GP-010,Grace Parker,Langham,Confirmed,2026-03-03,2026-03 | Q1,4.95,95.0,470.25,Cultivate Spring 2026 [Project: Strategy- Langham],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-02-23 to 2026-03-03 (6 entries),Q1 2026 (Jan - Mar),2026-03,2026
+GP-011,Grace Parker,Mission Increase,Confirmed,2026-03-03,2026-03 | Q1,0.07,95.0,6.65,Dan / Headshot update [Project: Project Requests],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-03-03 to 2026-03-03 (1 entries),Q1 2026 (Jan - Mar),2026-03,2026
+MH-010,Megan Heath,SETCO,Confirmed,2026-03-03,Mar 2026 | Q1,1.5,85.0,127.5,SETCO Table Cloth and Banners,RoundtreeInovice_April.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+MH-011,Megan Heath,PCA Foundation,Confirmed,2026-03-03,Mar 2026 | Q1,1.0,85.0,85.0,PCAF One Pager,RoundtreeInovice_April.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+MH-012,Megan Heath,PCA Foundation,Confirmed,2026-03-03,Mar 2026 | Q1,0.5,85.0,42.5,PCAF Business Cards,RoundtreeInovice_April.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+MH-013,Megan Heath,BITS,Confirmed,2026-03-03,Mar 2026 | Q1,2.5,85.0,212.5,BITS Table Tent and Foam Board Image 2026,RoundtreeInovice_April.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+MH-014,Megan Heath,BITS,Confirmed,2026-03-03,Mar 2026 | Q1,0.25,85.0,21.25,BITS sponsor banner,RoundtreeInovice_April.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+MH-015,Megan Heath,BITS,Confirmed,2026-03-03,Mar 2026 | Q1,0.25,85.0,21.25,BITS Sympathy Card,RoundtreeInovice_April.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+MH-016,Megan Heath,Christ Presbyterian,Confirmed,2026-03-03,Mar 2026 | Q1,9.75,85.0,828.75,Christ Presbyterian Church Profile,RoundtreeInovice_April.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+MH-017,Megan Heath,Mission Increase,Confirmed,2026-03-03,Mar 2026 | Q1,0.5,85.0,42.5,MI Indiana Addenda,RoundtreeInovice_April.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+MH-018,Megan Heath,BITS,Confirmed,2026-03-03,Mar 2026 | Q1,0.5,85.0,42.5,BITS Seating Chart,RoundtreeInovice_April.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+MH-019,Megan Heath,BITS,Confirmed,2026-03-03,Mar 2026 | Q1,1.0,85.0,85.0,BITS Luncheon Program,RoundtreeInovice_April.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+MH-020,Megan Heath,BITS,Confirmed,2026-03-03,Mar 2026 | Q1,0.25,85.0,21.25,BITS Enrollment Graph Update,RoundtreeInovice_April.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+MH-021,Megan Heath,byFaith,Confirmed,2026-03-03,Mar 2026 | Q1,2.25,85.0,191.25,byFaith Magazine “The Lamb of God” Graphics/Templates,RoundtreeInovice_April.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+MK-004,Molly Kelley,Mission Increase,Confirmed,2026-03-18,Mar 2026 | Q1,3.0,60.0,180.0,"Mission Increase (Major Givers Document, Gratitude Report Mockups)",Invoice_MollyKelley_3.18.26 - Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+MK-005,Molly Kelley,Langham,Confirmed,2026-03-18,Mar 2026 | Q1,4.25,60.0,255.0,Langham (Cultivate Final and Response Device),Invoice_MollyKelley_3.18.26 - Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+GP-034,Grace Parker,Mission Increase,Confirmed,2026-03-19,2026-03 | Q1,3.58,95.0,340.1,Resource Redesign [Project: Q2 2026 Workshop],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-03-10 to 2026-03-19 (5 entries),Q1 2026 (Jan - Mar),2026-03,2026
+GP-006,Grace Parker,Mission Increase,Confirmed,2026-03-23,2026-03 | Q1,3.03,95.0,287.85,Brian / Gulf coast ppt redesign [Project: Project Requests],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-03-19 to 2026-03-23 (3 entries),Q1 2026 (Jan - Mar),2026-03,2026
+OM-003,Olivia Moore,Mission Increase,Confirmed,2026-03-27,Mar 2026 | Q1,2.17,35.0,75.95,Becoming Whole - Research and Ideation,Roundtree Timesheet-Invoice - Time sheet.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+OM-004,Olivia Moore,Mission Increase,Confirmed,2026-03-27,Mar 2026 | Q1,2.92,35.0,102.2,Becoming Whole - Logo Design,Roundtree Timesheet-Invoice - Time sheet.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+OM-005,Olivia Moore,Mission Increase,Confirmed,2026-03-27,Mar 2026 | Q1,2.4,35.0,84.0,Becoming Whole - Design Edits,Roundtree Timesheet-Invoice - Time sheet.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+CC-005,Casper Co. LLC,Geneva,Confirmed,2026-03-30,Mar 2026 | Q1,1.75,145.0,253.75,Geneva - David Story,Casper Co. LLC - Roundtree Invoice - March 2026.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+CC-006,Casper Co. LLC,Geneva,Confirmed,2026-03-30,Mar 2026 | Q1,3.25,145.0,471.25,Geneva - Living Generously Booklet,Casper Co. LLC - Roundtree Invoice - March 2026.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+GP-017,Grace Parker,Mission Increase,Confirmed,2026-03-31,2026-03 | Q1,0.68,95.0,64.6,Downloadable asset - Mi Grant Services [Project: Mi Specialized],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-03-31 to 2026-03-31 (1 entries),Q1 2026 (Jan - Mar),2026-03,2026
+JS-030,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,32.83,35.0,1149.05,Geneva Annual Report,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-031,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,9.13,35.0,319.55,Geneva Annual Report Postcard,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-032,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,1.53,35.0,53.55,Geneva Annual Report Social Post,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-033,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,0.45,35.0,15.75,Geneva Call Package Checklist en español,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-034,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,4.22,35.0,147.7,Geneva Ball Markers,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-035,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,1.93,35.0,67.55,Geneva Spring Campaign Envelope,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-036,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,7.15,35.0,250.25,Geneva Spring Campaign Letter,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-037,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,2.73,35.0,95.55,Geneva Spring Campaign Email,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-038,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,2.6,35.0,91.0,Geneva Folders for Donors and Participants,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-039,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,3.27,35.0,114.45,Geneva Ministry Brief Refresh,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-040,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,2.7,35.0,94.5,Geneva Pastoral Cohorts Large Screen Ad,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-041,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,0.78,35.0,27.3,Geneva 8x8 for GA 2026,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-042,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,6.98,35.0,244.3,Geneva Cohort Explainer,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-043,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,1.72,35.0,60.2,Geneva Tote Bag Insert,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-044,Josiah Stam,Geneva,Confirmed,2026-03-31,Mar 2026 | Q1,3.22,35.0,112.7,Geneva Relief Half Sheet,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-045,Josiah Stam,Mission Increase,Confirmed,2026-03-31,Mar 2026 | Q1,1.43,35.0,50.05,Mi Equipping Call Thumbnail,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-046,Josiah Stam,Mission Increase,Confirmed,2026-03-31,Mar 2026 | Q1,1.33,35.0,46.55,Mi Taste of Mission Increase on Canva,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JS-047,Josiah Stam,Mission Increase,Confirmed,2026-03-31,Mar 2026 | Q1,0.22,35.0,7.7,Mi Jax Workshop Invite graphic,March Roundtree Invoice.pdf,,Q1 2026 (Jan - Mar),2026-03,2026
+JR-016,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.25,100.0,25.0,"Mar 2, 2026 Remove dashes https://app.asana.com/1/37620507411956/project/1212307186977426/task/1212308211581205?focus=true",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-017,Jared Roberts,Langham,Confirmed,2026-04-02,Mar 2026 | Q1,0.25,100.0,25.0,"Mar 2, 2026 https://app.asana.com/1/37620507411956/task/1213454741094577?focus=true",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-018,Jared Roberts,Langham,Confirmed,2026-04-02,Mar 2026 | Q1,0.25,100.0,25.0,"Mar 3, 2026 Update bios – finalize files https://app.asana.com/1/37620507411956/project/1212307186977426/task/1212308211581205?focus=true",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-019,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.25,125.0,31.25,"Mar 4, 2026 Center text Remove Share post footer https://app.asana.com/1/37620507411956/task/1213436867897920?focus=true",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-020,Jared Roberts,Langham,Confirmed,2026-04-02,Mar 2026 | Q1,0.25,100.0,25.0,"Mar 5, 2026 Update headshot and export https://drive.google.com/drive/folders/1Dq1bBhiyOp_9TCrKE7rR-7_yNoyFkDnl?usp=sharing",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-021,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.25,100.0,25.0,"Mar 6, 2026 MI to Mi and export https://drive.google.com/drive/folders/1Dq1bBhiyOp_9TCrKE7rR-7_yNoyFkDnl?usp=sharing",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-022,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.5,100.0,50.0,"Mar 6, 2026 https://app.asana.com/1/37620507411956/project/1212307186977426/task/1213556959083076?focus=true",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-023,Jared Roberts,Saturate,Confirmed,2026-04-02,Mar 2026 | Q1,4.5,125.0,562.5,"Mar 9, 2026 Saturate Design",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-024,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.75,125.0,93.75,"Mar 10, 2026 https://app.asana.com/1/37620507411956/project/1212307186977426/task/1213466319464884?focus=true",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-025,Jared Roberts,Saturate,Confirmed,2026-04-02,Mar 2026 | Q1,4.0,125.0,500.0,"Mar 10, 2026 Saturate Design",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-026,Jared Roberts,Saturate,Confirmed,2026-04-02,Mar 2026 | Q1,5.7333,125.0,716.66,"Mar 11, 2026 Saturate Design",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-027,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.5,125.0,62.5,"Mar 16, 2026 Make a 4-column grid, update offset logic https://app.asana.com/1/37620507411956/task/1213368710014671?focus=true",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-028,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.55,125.0,68.75,"Mar 16, 2026 Finalize MI email redesign https://app.asana.com/1/37620507411956/task/1213103302790600?focus=true",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-029,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.25,125.0,31.25,"Mar 16, 2026 Style vimeo embed https://app.asana.com/1/37620507411956/task/1213436867897920?focus=true",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-030,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.75,125.0,93.75,"Mar 18, 2026 MI Emails https://app.asana.com/1/37620507411956/task/1213103302790600?focus=true",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-031,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.25,125.0,31.25,"Mar 31, 2026 Mission Increase – impact stories",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-032,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Mar 2026 | Q1,0.5,125.0,62.5,"Mar 31, 2026 Mission Increase – Impact stories parent navigation logic updates",Invoice 0000073.pdf,,Q1 2026 (Jan - Mar),2026-04,2026
+JR-033,Jared Roberts,Mission Increase,Confirmed,2026-04-02,Apr 2026 | Q2,0.25,125.0,31.25,"Apr 2, 2026 Email template updates https://app.asana.com/1/37620507411956/task/1213103302790600/comment/1213898272512503?focus=true",Invoice 0000073.pdf,,Q2 2026 (Apr - Jun),2026-04,2026
+GP-016,Grace Parker,Geneva,Confirmed,2026-04-28,2026-04 | Q2,9.06,95.0,860.7,Design V1- living generously [Project: Strategy - Geneva],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-03-31 to 2026-04-28 (9 entries),Q2 2026 (Apr - Jun),2026-04,2026
+GP-022,Grace Parker,Mission Increase,Confirmed,2026-04-28,2026-04 | Q2,0.36,95.0,34.2,GPS / Reference sheet update [Project: Project Requests],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-04-23 to 2026-04-28 (2 entries),Q2 2026 (Apr - Jun),2026-04,2026
+CC-007,Casper Co. LLC,Geneva,Confirmed,2026-04-29,Apr 2026 | Q2,2.0,145.0,290.0,Financial planning story,Casper Co. LLC - Roundtree - April 2026 invoice.pdf,,Q2 2026 (Apr - Jun),2026-04,2026
+CC-008,Casper Co. LLC,Geneva,Confirmed,2026-04-29,Apr 2026 | Q2,2.5,145.0,362.5,Nathan story,Casper Co. LLC - Roundtree - April 2026 invoice.pdf,,Q2 2026 (Apr - Jun),2026-04,2026
+CC-009,Casper Co. LLC,Geneva,Confirmed,2026-04-29,Apr 2026 | Q2,1.5,145.0,217.5,Relief fund story,Casper Co. LLC - Roundtree - April 2026 invoice.pdf,,Q2 2026 (Apr - Jun),2026-04,2026
+GP-008,Grace Parker,Mission Increase,Confirmed,2026-05-01,2026-05 | Q2,0.07,95.0,6.65,Carlos / Fundamental Five doc [Project: Project Requests],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-04-29 to 2026-05-01 (3 entries),Q2 2026 (Apr - Jun),2026-05,2026
+MH-022,Megan Heath,PCA AC,Confirmed,2026-05-01,May 2026 | Q2,1.25,85.0,106.25,Direct Mail Piece,RoundtreeInvoice_May.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+MH-023,Megan Heath,BITS,Confirmed,2026-05-01,May 2026 | Q2,0.25,85.0,21.25,BITS Business Card,RoundtreeInvoice_May.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+MH-024,Megan Heath,PCA Foundation,Confirmed,2026-05-01,May 2026 | Q2,0.5,85.0,42.5,PCAF Response Device Update,RoundtreeInvoice_May.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+MH-025,Megan Heath,PCA Foundation,Confirmed,2026-05-01,May 2026 | Q2,0.25,85.0,21.25,PCAF Business Cards,RoundtreeInvoice_May.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+MH-026,Megan Heath,PCA Foundation,Confirmed,2026-05-01,May 2026 | Q2,0.75,85.0,63.75,Response Card - Smart Giving,RoundtreeInvoice_May.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+MH-027,Megan Heath,PCA Foundation,Confirmed,2026-05-01,May 2026 | Q2,2.5,85.0,212.5,PCAF Serving Churches Trifold,RoundtreeInvoice_May.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+MH-028,Megan Heath,PCA Foundation,Confirmed,2026-05-01,May 2026 | Q2,0.25,85.0,21.25,Services Workshop,RoundtreeInvoice_May.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+TB-001,"TrueLight Branding, Inc.",Mission Increase,Confirmed,2026-05-01,May 2026 | Q2,20.7,100.0,2070.0,"Mission Increase - Communications and Operations Guide - Design, layout",TLB INV 1573.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+JR-034,Jared Roberts,Mission Increase,Confirmed,2026-05-03,Apr 2026 | Q2,1.5,125.0,187.5,"Apr 8, 2026 Mission Increase Menu fixes https://app.asana.com/1/37620507411956/task/1213871915151939?focus=true",Invoice 0000080.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+JR-035,Jared Roberts,Mission Increase,Confirmed,2026-05-03,Apr 2026 | Q2,4.0,125.0,500.0,"Apr 8, 2026 Mission Increase Resources Page redesign/rebuild https://app.asana.com/1/37620507411956/task/1213871915151887?focus=true",Invoice 0000080.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+JR-036,Jared Roberts,Mission Increase,Confirmed,2026-05-03,Apr 2026 | Q2,2.75,100.0,275.0,"Apr 11, 2026 Mission Increase One Pagers https://app.asana.com/1/37620507411956/task/1213995116284960?focus=true and 1213995116284968",Invoice 0000080.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+JR-037,Jared Roberts,Mission Increase,Confirmed,2026-05-03,Apr 2026 | Q2,2.6333,100.0,263.33,"Apr 13, 2026 https://app.asana.com/1/37620507411956/task/1213995116284982?focus=true",Invoice 0000080.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+JR-038,Jared Roberts,Mission Increase,Confirmed,2026-05-03,Apr 2026 | Q2,1.0,125.0,125.0,"Apr 22, 2026 Resources page updates https://app.asana.com/1/37620507411956/task/1214134594441480?focus=true and 1214134697784101",Invoice 0000080.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+JR-039,Jared Roberts,Mission Increase,Confirmed,2026-05-03,Apr 2026 | Q2,1.0,125.0,125.0,"Apr 23, 2026 Create laptop mockups, add images to resources page",Invoice 0000080.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+JR-040,Jared Roberts,Mission Increase,Confirmed,2026-05-03,Apr 2026 | Q2,0.25,125.0,31.25,"Apr 30, 2026 https://app.asana.com/1/37620507411956/task/1214384921366717 and 1214385436356652",Invoice 0000080.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+GP-027,Grace Parker,Mission Increase,Confirmed,2026-05-08,2026-05 | Q2,3.0,95.0,285.0,Kristina / Client Retreat ppt redo [Project: Project Requests],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-05-04 to 2026-05-08 (4 entries),Q2 2026 (Apr - Jun),2026-05,2026
+GP-001,Grace Parker,PCA Foundation,Confirmed,2026-05-20,2026-05 | Q2,1.78,95.0,169.1,A&C brochure [Project: Print Design-PCAF],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-03-24 to 2026-05-20 (4 entries),Q2 2026 (Apr - Jun),2026-05,2026
+TB-002,"TrueLight Branding, Inc.",PCA Foundation,Confirmed,2026-05-20,May 2026 | Q2,4.5,100.0,450.0,PCAF - T-shirt design,TLB INV 1581.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+TB-003,"TrueLight Branding, Inc.",PCA Foundation,Confirmed,2026-05-20,May 2026 | Q2,6.5,100.0,650.0,"PCAF - Trade show 20' x 8' ""Give Smarter"" backdrop",TLB INV 1581.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+JS-048,Josiah Stam,Geneva,Confirmed,2026-05-23,May 2026 | Q2,0.1,35.0,3.5,Geneva Meeting Norms Tabletop Display,May 26 Roundtree Invoice.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+JS-049,Josiah Stam,Geneva,Confirmed,2026-05-23,May 2026 | Q2,10.48,35.0,366.8,Geneva Retirement Plan Brochure,May 26 Roundtree Invoice.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+JS-050,Josiah Stam,Mission Increase,Confirmed,2026-05-23,May 2026 | Q2,6.06,35.0,212.1,Mi Postcards,May 26 Roundtree Invoice.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+JS-051,Josiah Stam,Mission Increase,Confirmed,2026-05-23,May 2026 | Q2,1.61,35.0,56.35,Mi/ Switchboard/ Alliance Post,May 26 Roundtree Invoice.pdf,,Q2 2026 (Apr - Jun),2026-05,2026
+CC-010,Casper Co. LLC,Geneva,Confirmed,2026-06-01,May 2026 | Q2,1.0,145.0,145.0,Geneva - Insurance article,Casper Co. LLC - Roundtree Invoice - May 2026.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+GP-005,Grace Parker,Mission Increase,Confirmed,2026-06-01,2026-06 | Q2,0.02,95.0,1.9,Ashley Shaffer / PPT redesign [Project: Project Requests],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-06-01 to 2026-06-01 (1 entries),Q2 2026 (Apr - Jun),2026-06,2026
+JR-041,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,0.25,125.0,31.25,"May 6, 2026 https://app.asana.com/1/37620507411956/task/1214445383972349?focus=true",Invoice 0000081.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+JR-042,Jared Roberts,PCA Foundation,Confirmed,2026-06-01,May 2026 | Q2,4.0,100.0,400.0,"May 11, 2026 Complex gifts",Invoice 0000081.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+JR-043,Jared Roberts,PCA Foundation,Confirmed,2026-06-01,May 2026 | Q2,0.75,100.0,75.0,"May 15, 2026 Complex gifts",Invoice 0000081.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+JR-044,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,2.0,100.0,200.0,"May 18, 2026 Core Services PDF",Invoice 0000081.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+JR-045,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,1.0,100.0,100.0,"May 19, 2026 Core Services PDF",Invoice 0000081.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+JR-046,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,1.25,125.0,156.25,"May 20, 2026 https://app.asana.com/1/37620507411956/task/1214963922075191?focus=true",Invoice 0000081.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+JR-047,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,0.25,125.0,31.25,"May 21, 2026 https://app.asana.com/1/37620507411956/task/1214963922075191?focus=true",Invoice 0000081.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+JR-048,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,0.25,125.0,31.25,"May 22, 2026 https://app.asana.com/1/37620507411956/task/1214963922075191?focus=true",Invoice 0000081.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+JR-049,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,4.5,125.0,562.5,"May 23, 2026 Build figma mockups as cut-up html https://app.asana.com/1/37620507411956/task/1214735299665561?focus=true",Invoice 0000081.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+JR-050,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,0.25,100.0,25.0,"May 27, 2026 https://app.asana.com/1/37620507411956/project/1213269125900055/task/1214735299665540?focus=true",Invoice 0000081.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+JR-051,Jared Roberts,PCA Foundation,Confirmed,2026-06-01,May 2026 | Q2,1.75,100.0,175.0,"May 28, 2026 https://app.asana.com/1/37620507411956/task/1213910482331483?focus=true",Invoice 0000081.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+JR-052,Jared Roberts,PCA Foundation,Confirmed,2026-06-01,May 2026 | Q2,0.25,100.0,25.0,"May 30, 2026 https://app.asana.com/1/37620507411956/task/1214575150867482?focus=true",Invoice 0000081.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+JR-053,Jared Roberts,PCA Foundation,Confirmed,2026-06-01,May 2026 | Q2,0.25,100.0,25.0,"May 30, 2026 https://app.asana.com/1/37620507411956/project/1213317067356452/task/1213910482331483?focus=true",Invoice 0000081.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+JR-054,Jared Roberts,Mission Increase,Confirmed,2026-06-01,May 2026 | Q2,0.5,100.0,50.0,"May 30, 2026 https://app.asana.com/1/37620507411956/task/1214109157683003?focus=true",Invoice 0000081.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+JR-055,Jared Roberts,Mission Increase,Confirmed,2026-06-01,Jun 2026 | Q2,0.25,100.0,25.0,"Jun 1, 2026 https://app.asana.com/1/37620507411956/project/1212991151453491/task/1214109157683003?focus=true",Invoice 0000081.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+MH-029,Megan Heath,PCA AC,Confirmed,2026-06-01,Jun 2026 | Q2,0.25,85.0,21.25,Direct Mail Piece,RoundtreeInvoice_June (1).pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+MH-030,Megan Heath,BITS,Confirmed,2026-06-01,Jun 2026 | Q2,0.5,85.0,42.5,BITS Business Card,RoundtreeInvoice_June (1).pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+MH-031,Megan Heath,Mission Increase,Confirmed,2026-06-01,Jun 2026 | Q2,0.25,85.0,21.25,Lee / Comm Ops Guide,RoundtreeInvoice_June (1).pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+MH-032,Megan Heath,PCA Foundation,Confirmed,2026-06-01,Jun 2026 | Q2,2.0,85.0,170.0,PCAF Serving Churches Trifold,RoundtreeInvoice_June (1).pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+MH-033,Megan Heath,Mission Increase,Confirmed,2026-06-01,Jun 2026 | Q2,1.0,85.0,85.0,Becoming Whole Flyer,RoundtreeInvoice_June (1).pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+MH-034,Megan Heath,BITS,Confirmed,2026-06-01,Jun 2026 | Q2,0.5,85.0,42.5,Edits to Commitment Card,RoundtreeInvoice_June (1).pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+GP-021,Grace Parker,Geneva,Confirmed,2026-06-04,2026-06 | Q2,5.67,95.0,538.65,Final proof review- living generously [Project: Strategy - Geneva],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-05-07 to 2026-06-04 (10 entries),Q2 2026 (Apr - Jun),2026-06,2026
+GP-023,Grace Parker,Geneva,Confirmed,2026-06-16,2026-06 | Q2,0.4,95.0,38.0,Geneva AD&D Updates [Project: Digital Design - Geneva],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-06-16 to 2026-06-16 (1 entries),Q2 2026 (Apr - Jun),2026-06,2026
+GP-032,Grace Parker,Geneva,Confirmed,2026-06-16,2026-06 | Q2,1.01,95.0,95.95,Mid-Year Impact Report 2026 - Geneva [Project: Print Design - Geneva],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-06-04 to 2026-06-16 (2 entries),Q2 2026 (Apr - Jun),2026-06,2026
+GP-007,Grace Parker,PCA Foundation,Confirmed,2026-06-17,2026-06 | Q2,0.17,95.0,16.15,Careers page QR code flyer [Project: 2026 PCAF GA Booth Design],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-06-17 to 2026-06-17 (1 entries),Q2 2026 (Apr - Jun),2026-06,2026
+GP-033,Grace Parker,PCA Foundation,Confirmed,2026-06-17,2026-06 | Q2,0.72,95.0,68.4,Qr code to newsletter (lead gen from tshirts) [Project: 2026 PCAF GA Booth Design],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-06-02 to 2026-06-17 (3 entries),Q2 2026 (Apr - Jun),2026-06,2026
+GP-036,Grace Parker,Mission Increase,Confirmed,2026-06-17,2026-06 | Q2,1.05,95.0,99.75,Scott / Donor pitch deck 6/11/26 [Project: Project Requests],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-06-11 to 2026-06-17 (4 entries),Q2 2026 (Apr - Jun),2026-06,2026
+MK-006,Molly Kelley,Village Schools International,Confirmed,2026-06-22,Jun 2026 | Q2,2.5,60.0,150.0,VSI Report (edits after 5/15),Invoice_MollyKelley_6.22.26 - Invoice.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+MK-007,Molly Kelley,PCA Foundation,Confirmed,2026-06-22,Jun 2026 | Q2,0.75,60.0,45.0,PCAF Devo Translations,Invoice_MollyKelley_6.22.26 - Invoice.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+MK-008,Molly Kelley,Langham,Confirmed,2026-06-22,Jun 2026 | Q2,0.5,60.0,30.0,Langham Cultivate Digital Edits,Invoice_MollyKelley_6.22.26 - Invoice.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+MK-009,Molly Kelley,PCA Foundation,Confirmed,2026-06-22,Jun 2026 | Q2,0.75,60.0,45.0,PCAF Promo Email Design,Invoice_MollyKelley_6.22.26 - Invoice.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+MK-010,Molly Kelley,PCA Foundation,Confirmed,2026-06-22,Jun 2026 | Q2,1.0,60.0,60.0,PCAF Devotional Landing Page (after 5/15),Invoice_MollyKelley_6.22.26 - Invoice.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+MK-011,Molly Kelley,PCA Foundation,Confirmed,2026-06-22,Jun 2026 | Q2,2.25,60.0,135.0,PCAF Annual Report Webpage Design,Invoice_MollyKelley_6.22.26 - Invoice.pdf,,Q2 2026 (Apr - Jun),2026-06,2026
+GP-013,Grace Parker,Geneva,Confirmed,2026-06-26,2026-06 | Q2,1.99,95.0,189.05,Design Retirement Plan Brochure - English - Geneva [Project: Print Design - Geneva],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-05-28 to 2026-06-26 (5 entries),Q2 2026 (Apr - Jun),2026-06,2026
+GP-014,Grace Parker,Geneva,Confirmed,2026-06-26,2026-06 | Q2,2.76,95.0,262.2,Design Retirement Plan Brochure - Korean - Geneva [Project: Print Design - Geneva],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-05-29 to 2026-06-26 (4 entries),Q2 2026 (Apr - Jun),2026-06,2026
+GP-015,Grace Parker,Geneva,Confirmed,2026-06-30,2026-06 | Q2,3.11,95.0,295.45,Design Retirement Plan Brochure - Spanish - Geneva [Project: Print Design - Geneva],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-06-01 to 2026-06-30 (4 entries),Q2 2026 (Apr - Jun),2026-06,2026
+MH-035,Megan Heath,Mission Increase,Confirmed,2026-07-01,Jul 2026 | Q3,2.0,85.0,170.0,Mission Increase Dan / Flyer redesign,RoundtreeInvoice_July2026.pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-036,Megan Heath,Mission Increase,Confirmed,2026-07-01,Jul 2026 | Q3,5.25,85.0,446.25,Ashley Shaffer / PPT redesign,RoundtreeInvoice_July2026.pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-037,Megan Heath,BITS,Confirmed,2026-07-01,Jul 2026 | Q3,0.25,85.0,21.25,BITS Envelope Correction,RoundtreeInvoice_July2026.pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-038,Megan Heath,PCA Foundation,Confirmed,2026-07-01,Jul 2026 | Q3,0.75,85.0,63.75,PCAF Business Cards,RoundtreeInvoice_July2026.pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-039,Megan Heath,PCA Foundation,Confirmed,2026-07-01,Jul 2026 | Q3,0.25,85.0,21.25,Logo Resize,RoundtreeInvoice_July2026.pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-040,Megan Heath,BITS,Confirmed,2026-07-01,Jul 2026 | Q3,0.25,85.0,21.25,BITS Graph Edits,RoundtreeInvoice_July2026.pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-041,Megan Heath,BITS,Confirmed,2026-07-01,Jul 2026 | Q3,0.75,85.0,63.75,BITS Letterhead Update,RoundtreeInvoice_July2026.pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-042,Megan Heath,Mission Increase,Confirmed,2026-07-01,Jul 2026 | Q3,1.75,85.0,148.75,MI Impact Report,RoundtreeInvoice_July2026.pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-043,Megan Heath,BITS,Confirmed,2026-07-01,Jul 2026 | Q3,0.5,85.0,42.5,At a Glance 2026,RoundtreeInvoice_July2026.pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-044,Megan Heath,BITS,Confirmed,2026-07-01,Jul 2026 | Q3,0.25,85.0,21.25,Edits to Commitment Card,RoundtreeInvoice_July2026.pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-045,Megan Heath,BITS,Confirmed,2026-07-02,Jul 2026 | Q3,0.5,85.0,42.5,At a Glance 2026,RoundtreeInvoice_August .pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-046,Megan Heath,BITS,Confirmed,2026-07-02,Jul 2026 | Q3,1.75,85.0,148.75,Edits to Commitment Card,RoundtreeInvoice_August .pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-047,Megan Heath,Mission Increase,Confirmed,2026-07-02,Jul 2026 | Q3,1.25,85.0,106.25,MI Placemats,RoundtreeInvoice_August .pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-048,Megan Heath,Mission Increase,Confirmed,2026-07-02,Jul 2026 | Q3,1.0,85.0,85.0,MI Commitment Card,RoundtreeInvoice_August .pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-049,Megan Heath,Mission Increase,Confirmed,2026-07-02,Jul 2026 | Q3,0.5,85.0,42.5,AI MI Position Paper,RoundtreeInvoice_August .pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-050,Megan Heath,Mission Increase,Confirmed,2026-07-02,Jul 2026 | Q3,0.5,85.0,42.5,MI Impact Report,RoundtreeInvoice_August .pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-051,Megan Heath,Mission Increase,Confirmed,2026-07-02,Jul 2026 | Q3,0.75,85.0,63.75,MI Charity One Pager,RoundtreeInvoice_August .pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-052,Megan Heath,Mission Increase,Confirmed,2026-07-02,Jul 2026 | Q3,1.25,85.0,106.25,Becoming Whole Flyers,RoundtreeInvoice_August .pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+MH-053,Megan Heath,BITS,Confirmed,2026-07-02,Jul 2026 | Q3,0.25,85.0,21.25,BITS Map Update,RoundtreeInvoice_August .pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+GP-037,Grace Parker,Mission Increase,Confirmed,2026-07-09,2026-07 | Q3,0.17,95.0,16.15,Update Staci's Photo [Project: Mi Bugherd Website Edits],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-07-09 to 2026-07-09 (1 entries),Q3 2026 (Jul - Sep),2026-07,2026
+JR-056,Jared Roberts,PCA Foundation,Confirmed,2026-07-09,Jun 2026 | Q2,0.5,100.0,50.0,"Jun 2, 2026 https://app.asana.com/1/37620507411956/task/1214575150867482?focus=true",Invoice 0000084.pdf,,Q2 2026 (Apr - Jun),2026-07,2026
+JR-057,Jared Roberts,PCA Foundation,Confirmed,2026-07-09,Jun 2026 | Q2,0.25,100.0,25.0,"Jun 3, 2026 https://app.asana.com/1/37620507411956/task/1213910482331483?focus=true",Invoice 0000084.pdf,,Q2 2026 (Apr - Jun),2026-07,2026
+JR-058,Jared Roberts,Mission Increase,Confirmed,2026-07-09,Jun 2026 | Q2,3.75,125.0,468.75,"Jun 4, 2026 https://app.asana.com/1/37620507411956/task/1214253934020309?focus=true",Invoice 0000084.pdf,,Q2 2026 (Apr - Jun),2026-07,2026
+JR-059,Jared Roberts,PCA AC,Confirmed,2026-07-09,Jun 2026 | Q2,0.75,125.0,93.75,"Jun 8, 2026 Troubleshooting https://app.asana.com/1/37620507411956/task/1214631315405443?focus=true",Invoice 0000084.pdf,,Q2 2026 (Apr - Jun),2026-07,2026
+JR-060,Jared Roberts,Mission Increase,Confirmed,2026-07-09,Jun 2026 | Q2,1.0,100.0,100.0,"Jun 8, 2026 Time https://app.asana.com/1/37620507411956/task/1215462113663928?focus=true",Invoice 0000084.pdf,,Q2 2026 (Apr - Jun),2026-07,2026
+JR-061,Jared Roberts,Mission Increase,Confirmed,2026-07-09,Jun 2026 | Q2,0.5,100.0,50.0,"Jun 11, 2026 https://app.asana.com/1/37620507411956/project/1210675302997600/task/1215498512680809?focus=true",Invoice 0000084.pdf,,Q2 2026 (Apr - Jun),2026-07,2026
+JR-062,Jared Roberts,Mission Increase,Confirmed,2026-07-09,Jun 2026 | Q2,0.75,100.0,75.0,"Jun 12, 2026 https://app.asana.com/1/37620507411956/project/1212991151453491/task/1214109157683003?focus=true",Invoice 0000084.pdf,,Q2 2026 (Apr - Jun),2026-07,2026
+JR-063,Jared Roberts,Unconfirmed (Needs Review),⚠️ FLAGGED,2026-07-09,Jun 2026 | Q2,0.5,125.0,62.5,"Jun 16, 2026 Web Development",Invoice 0000084.pdf,PM Confirmed: Unknown client assignment,Q2 2026 (Apr - Jun),2026-07,2026
+JR-064,Jared Roberts,Mission Increase,Confirmed,2026-07-09,Jun 2026 | Q2,2.0,100.0,200.0,"Jun 25, 2026 Graphic Design https://app.asana.com/1/37620507411956/project/1213103545531663/task/1215498512680913 and 1215498512680911",Invoice 0000084.pdf,,Q2 2026 (Apr - Jun),2026-07,2026
+JR-065,Jared Roberts,Mission Increase,Confirmed,2026-07-09,Jul 2026 | Q3,0.75,125.0,93.75,"Jul 3, 2026 https://app.asana.com/1/37620507411956/project/1212991151453491/task/1215585965635292?focus=true",Invoice 0000084.pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+GP-026,Grace Parker,Mission Increase,Confirmed,2026-07-10,2026-07 | Q3,4.65,95.0,441.75,Jimeka / Rooted and Growing Event [Project: Project Requests],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-03-12 to 2026-07-10 (10 entries),Q3 2026 (Jul - Sep),2026-07,2026
+TB-004,"TrueLight Branding, Inc.",Mission Increase,Confirmed,2026-07-13,Jul 2026 | Q3,9.3,100.0,930.0,Mission Increase - two PowerPoint Presentations,TLB INV 1591.pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+CC-011,Casper Co. LLC,Geneva,Confirmed,2026-07-31,Jul 2026 | Q3,2.5,145.0,362.5,Geneva - Brent Curl Story,Casper Co. LLC - Roundtree Invoice - July 2026.pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+CC-012,Casper Co. LLC,Mission Increase,Confirmed,2026-07-31,Jul 2026 | Q3,3.0,145.0,435.0,Mission Increase - Home Page Audit,Casper Co. LLC - Roundtree Invoice - July 2026.pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+CC-013,Casper Co. LLC,PCA AC,Confirmed,2026-07-31,Jul 2026 | Q3,1.0,145.0,145.0,AC Prayer Guide Letter,Casper Co. LLC - Roundtree Invoice - July 2026.pdf,,Q3 2026 (Jul - Sep),2026-07,2026
+JR-066,Jared Roberts,Mission Increase,Confirmed,2026-08-03,Jul 2026 | Q3,0.5,100.0,50.0,"Jul 10, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1216149027591067?focus=true",Invoice 0000087.pdf,,Q3 2026 (Jul - Sep),2026-08,2026
+JR-067,Jared Roberts,Mission Increase,Confirmed,2026-08-03,Jul 2026 | Q3,1.0,100.0,100.0,"Jul 14, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1216388487881036",Invoice 0000087.pdf,,Q3 2026 (Jul - Sep),2026-08,2026
+JR-068,Jared Roberts,Mission Increase,Confirmed,2026-08-03,Jul 2026 | Q3,0.5,100.0,50.0,"Jul 15, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1216573279689838?focus=true",Invoice 0000087.pdf,,Q3 2026 (Jul - Sep),2026-08,2026
+JR-069,Jared Roberts,Mission Increase,Confirmed,2026-08-03,Jul 2026 | Q3,0.5,125.0,62.5,"Jul 20, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1216727722807145?focus=true",Invoice 0000087.pdf,,Q3 2026 (Jul - Sep),2026-08,2026
+JR-070,Jared Roberts,Mission Increase,Confirmed,2026-08-03,Jul 2026 | Q3,0.5,125.0,62.5,"Jul 24, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1216798967581642?focus=true",Invoice 0000087.pdf,,Q3 2026 (Jul - Sep),2026-08,2026
+JR-071,Jared Roberts,Rock Creek,Confirmed,2026-08-03,Jul 2026 | Q3,1.0,125.0,125.0,"Jul 24, 2026 Troubleshoot Rock Creek broken design",Invoice 0000087.pdf,,Q3 2026 (Jul - Sep),2026-08,2026
+JR-072,Jared Roberts,Mission Increase,Confirmed,2026-08-03,Jul 2026 | Q3,0.5,100.0,50.0,"Jul 28, 2026 Mi Academy PDF Updates",Invoice 0000087.pdf,,Q3 2026 (Jul - Sep),2026-08,2026
+OM-002,Olivia Moore,Mission Increase,Confirmed,2026-08-07,Aug 2026 | Q3,2.83,35.0,99.05,Mission Increase - Design Edits,Roundtree Timesheet-Invoice - 2.pdf,,Q3 2026 (Jul - Sep),2026-08,2026
+OM-001,Olivia Moore,Geneva,Confirmed,2026-08-13,Aug 2026 | Q3,0.0,0.0,819.35,Marketing Material & Collateral Design - Various design projects for the Geneva Benefits Group,Invoice - Olivia Noelle Design - 1 - Invoice.pdf,,Q3 2026 (Jul - Sep),2026-08,2026
+GP-028,Grace Parker,Mission Increase,Confirmed,2026-08-18,2026-08 | Q3,1.82,95.0,172.9,Logo [Project: The 10:2 Global Prayer Gathering],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-08-13 to 2026-08-18 (3 entries),Q3 2026 (Jul - Sep),2026-08,2026
+CC-014,Casper Co. LLC,Geneva,Confirmed,2026-08-31,Aug 2026 | Q3,1.5,145.0,217.5,Geneva - Charitable IQ Article,Casper Co. LLC - Roundtree - Aug 2026 invoice.pdf,,Q3 2026 (Jul - Sep),2026-08,2026
+CC-015,Casper Co. LLC,Mission Increase,Confirmed,2026-08-31,Aug 2026 | Q3,1.0,145.0,145.0,Mission Increase Homepage Copy Edits,Casper Co. LLC - Roundtree - Aug 2026 invoice.pdf,,Q3 2026 (Jul - Sep),2026-08,2026
+CC-016,Casper Co. LLC,TGT,Confirmed,2026-08-31,Aug 2026 | Q3,4.0,145.0,580.0,TGT Website Copy Audit and Suggestions,Casper Co. LLC - Roundtree - Aug 2026 invoice.pdf,,Q3 2026 (Jul - Sep),2026-08,2026
+CC-017,Casper Co. LLC,SRG,Confirmed,2026-08-31,Aug 2026 | Q3,10.0,145.0,1450.0,SRG Magazine Articles,Casper Co. LLC - Roundtree - Aug 2026 invoice.pdf,,Q3 2026 (Jul - Sep),2026-08,2026
+GP-009,Grace Parker,TGT,Confirmed,2026-09-01,2026-09 | Q3,2.02,95.0,191.9,"Cover Image + internal example (annual report, TGT) [Project: Annual Report 2026]",Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-08-18 to 2026-09-01 (5 entries),Q3 2026 (Jul - Sep),2026-09,2026
+MH-054,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,1.0,85.0,85.0,CAFO Mission Increase AD,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-055,Megan Heath,Geneva,Confirmed,2026-09-01,Sep 2026 | Q3,1.0,85.0,85.0,Geneva Dental Slip Sheet,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-056,Megan Heath,Geneva,Confirmed,2026-09-01,Sep 2026 | Q3,0.5,85.0,42.5,Geneva Envelope Edits,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-057,Megan Heath,BITS,Confirmed,2026-09-01,Sep 2026 | Q3,0.25,85.0,21.25,BITS Letterhead Update,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-058,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,1.25,85.0,106.25,MI Academy One Pager,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-059,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,1.5,85.0,127.5,MI Hanging Banner,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-060,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,0.25,85.0,21.25,Becoming Whole Flyers,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-061,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,1.5,85.0,127.5,MI Academy Foundation Powerpoint,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-062,Megan Heath,Village Schools International,Confirmed,2026-09-01,Sep 2026 | Q3,1.25,85.0,106.25,Village School Cards,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-063,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,1.0,85.0,85.0,Dan / Mi Champion 2 pager,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-064,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,0.75,85.0,63.75,MI Map Graphic,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-065,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,0.25,85.0,21.25,MI Letterhead,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-066,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,0.25,85.0,21.25,MI CAFO QR Code Flyer,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-067,Megan Heath,BITS,Confirmed,2026-09-01,Sep 2026 | Q3,0.5,85.0,42.5,BITS State Map Update,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-068,Megan Heath,Geneva,Confirmed,2026-09-01,Sep 2026 | Q3,1.75,85.0,148.75,Geneva Social Graphics,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-069,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,1.25,85.0,106.25,MI Distilled Champion Two Pager,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-070,Megan Heath,Geneva,Confirmed,2026-09-01,Sep 2026 | Q3,0.75,85.0,63.75,Geneva Folder Update,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-071,Megan Heath,Mission Increase,Confirmed,2026-09-01,Sep 2026 | Q3,0.5,85.0,42.5,Re-creation of Gratitude gathering collateral,RoundtreeInvoice_September2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+JR-073,Jared Roberts,Mission Increase,Confirmed,2026-09-03,Aug 2026 | Q3,3.5,100.0,350.0,"Aug 15, 2026 Slide Deck",Invoice 0000096.pdf,Q3 deck redesign,Q3 2026 (Jul - Sep),2026-09,2026
+JR-074,Jared Roberts,Mission Increase,Confirmed,2026-09-03,Aug 2026 | Q3,1.0,100.0,100.0,"Aug 18, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1215498512680913?focus=true",Invoice 0000096.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+JR-075,Jared Roberts,Mission Increase,Confirmed,2026-09-03,Aug 2026 | Q3,1.0,125.0,125.0,"Aug 31, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1217274518256239?focus=true",Invoice 0000096.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+JR-076,Jared Roberts,Mission Increase,Confirmed,2026-09-03,Sep 2026 | Q3,1.5,100.0,150.0,"Sep 3, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1215498512680911?focus=true",Invoice 0000096.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+JR-077,Jared Roberts,Mission Increase,Confirmed,2026-09-03,Sep 2026 | Q3,1.5,100.0,150.0,"Sep 3, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1215498512680913?focus=true",Invoice 0000096.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+JR-078,Jared Roberts,Mission Increase,Confirmed,2026-09-03,Sep 2026 | Q3,0.75,125.0,93.75,"Sep 3, 2026 https://app.asana.com/1/37620507411956/project/1213103545531663/task/1217781416553046?focus=true",Invoice 0000096.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+CC-018,Casper Co. LLC,Geneva,Confirmed,2026-09-30,Sep 2026 | Q3,3.0,145.0,435.0,Geneva - ByFaith Article,Casper Co. LLC- Roundtree Invoice - Sep 2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+CC-019,Casper Co. LLC,Geneva,Confirmed,2026-09-30,Sep 2026 | Q3,2.5,145.0,362.5,Geneva - Bill McCutcheon Interview and Story,Casper Co. LLC- Roundtree Invoice - Sep 2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+CC-020,Casper Co. LLC,Geneva,Confirmed,2026-09-30,Sep 2026 | Q3,1.5,145.0,217.5,Geneva - Cybersecurity Article,Casper Co. LLC- Roundtree Invoice - Sep 2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+CC-021,Casper Co. LLC,Geneva,Confirmed,2026-09-30,Sep 2026 | Q3,2.0,145.0,290.0,Geneva - Look / After Framework,Casper Co. LLC- Roundtree Invoice - Sep 2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+CC-022,Casper Co. LLC,Geneva,Confirmed,2026-09-30,Sep 2026 | Q3,1.0,145.0,145.0,Geneva - Look / After Letter,Casper Co. LLC- Roundtree Invoice - Sep 2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+CC-023,Casper Co. LLC,Geneva,Confirmed,2026-09-30,Sep 2026 | Q3,0.5,145.0,72.5,Geneva - Look / After Email,Casper Co. LLC- Roundtree Invoice - Sep 2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+CC-024,Casper Co. LLC,Mission Increase,Confirmed,2026-09-30,Sep 2026 | Q3,2.5,145.0,362.5,Mission Increase 2-pager,Casper Co. LLC- Roundtree Invoice - Sep 2026.pdf,,Q3 2026 (Jul - Sep),2026-09,2026
+MH-072,Megan Heath,Mission Increase,Confirmed,2026-10-01,Oct 2026 | Q4,0.5,85.0,42.5,Geoff / Mi Academy 2-pager,RoundtreeInvoice_October2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+MH-073,Megan Heath,Geneva,Confirmed,2026-10-01,Oct 2026 | Q4,0.75,85.0,63.75,Geneva Case for Support Updates,RoundtreeInvoice_October2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+MH-074,Megan Heath,Mission Increase,Confirmed,2026-10-01,Oct 2026 | Q4,0.25,85.0,21.25,MI Impact Report,RoundtreeInvoice_October2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+MH-075,Megan Heath,Geneva,Confirmed,2026-10-01,Oct 2026 | Q4,3.0,85.0,255.0,Geneva Appeal Letter Design,RoundtreeInvoice_October2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+MH-076,Megan Heath,byFaith,Confirmed,2026-10-01,Oct 2026 | Q4,0.75,85.0,63.75,byFaith Social Template,RoundtreeInvoice_October2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+MH-077,Megan Heath,BITS,Confirmed,2026-10-01,Oct 2026 | Q4,0.5,85.0,42.5,BITS Christmas Card Update,RoundtreeInvoice_October2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+MH-078,Megan Heath,Geneva,Confirmed,2026-10-01,Oct 2026 | Q4,0.75,85.0,63.75,Geneva Clergy Act Social Post,RoundtreeInvoice_October2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+MH-079,Megan Heath,BITS,Confirmed,2026-10-01,Oct 2026 | Q4,0.5,85.0,42.5,BITS Luncheon Save the Date 2027,RoundtreeInvoice_October2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+MH-080,Megan Heath,BITS,Confirmed,2026-10-01,Oct 2026 | Q4,0.5,85.0,42.5,BITS E-Signature,RoundtreeInvoice_October2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+MH-081,Megan Heath,Mission Increase,Confirmed,2026-10-01,Oct 2026 | Q4,1.0,85.0,85.0,Re-creation of Gratitude gathering collateral,RoundtreeInvoice_October2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+MH-082,Megan Heath,SETCO,Confirmed,2026-10-01,Oct 2026 | Q4,0.25,85.0,21.25,SETCO Nutcracker Ad,RoundtreeInvoice_October2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+GP-030,Grace Parker,Mission Increase,Confirmed,2026-10-09,2026-10 | Q4,3.23,95.0,306.85,Mi Capital Campaign Roadmap / Whitepaper  [Project: Mi Specialized],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-02-03 to 2026-10-09 (10 entries),Q4 2026 (Oct - Dec),2026-10,2026
+PL-001,Piland Legal,PCA Foundation,Confirmed,2026-10-09,Oct 2026 | Q4,1.0,250.0,250.0,Article – “Giving Options for Those Age 70 ½ and Older”,Invoice - Roundtree 10.9.26.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+GP-029,Grace Parker,Mission Increase,Confirmed,2026-10-21,2026-10 | Q4,0.12,95.0,11.4,Mella Headshot update [Project: Project Requests],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-10-21 to 2026-10-21 (1 entries),Q4 2026 (Oct - Dec),2026-10,2026
+CK-001,Craft & Calling,Mission Increase,Confirmed,2026-10-23,Oct 2026 | Q4,4.5,31.0,139.5,Mission Increase - Prayer Gathering Social Media Content: Design of five branded images for publishing on social media platforms. 9/17,Invoice 1001.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+CK-002,Craft & Calling,Mission Increase,Confirmed,2026-10-23,Oct 2026 | Q4,6.57,31.0,203.67,Mission Increase Gates of Thanksgiving Invitation: Design of 5x7 invitation cards. 9/29–10/13,Invoice 1001.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+CK-003,Craft & Calling,PCA AC,Confirmed,2026-10-23,Oct 2026 | Q4,3.72,31.0,115.32,"PCA AC General Assembly Booklet Ads: Design of three ads (two half page, one full page) for General Assembly booklet. 10/8",Invoice 1001.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+CK-004,Craft & Calling,Mission Increase,Confirmed,2026-10-23,Oct 2026 | Q4,2.08,31.0,64.48,Mission Increase Christmas Card: Design of 5x7 holiday greeting card. 10/12– 10/14,Invoice 1001.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+CC-025,Casper Co. LLC,Geneva,Confirmed,2026-10-30,Oct 2026 | Q4,1.5,145.0,217.5,Geneva - Bill McCutchon Story,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+CC-026,Casper Co. LLC,Geneva,Confirmed,2026-10-30,Oct 2026 | Q4,2.25,145.0,326.25,Geneva - ByFaith Mike Ahlberg Story,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+CC-027,Casper Co. LLC,Geneva,Confirmed,2026-10-30,Oct 2026 | Q4,1.0,145.0,145.0,Geneva - Clergy Press Release,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+CC-028,Casper Co. LLC,Geneva,Confirmed,2026-10-30,Oct 2026 | Q4,0.5,145.0,72.5,Geneva - Living Generously Email,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+CC-029,Casper Co. LLC,Geneva,Confirmed,2026-10-30,Oct 2026 | Q4,1.0,145.0,145.0,Geneva - One page proposal,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+CC-030,Casper Co. LLC,PCA AC,Confirmed,2026-10-30,Oct 2026 | Q4,1.0,145.0,145.0,PCA AC Ads,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+CC-031,Casper Co. LLC,PCA Foundation,Confirmed,2026-10-30,Oct 2026 | Q4,1.5,145.0,217.5,PCAF - Article on problems with generosity as industry,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+CC-032,Casper Co. LLC,PCA Foundation,Confirmed,2026-10-30,Oct 2026 | Q4,1.0,145.0,145.0,PCAF - Article on giving beyond the offering plate,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+CC-033,Casper Co. LLC,West Paces Advisors,Confirmed,2026-10-30,Oct 2026 | Q4,5.5,145.0,797.5,West Paces Advisors - Creative Ideas and Research,Casper Co. LLC - Roundtree Invoice - Oct 2026.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+TB-005,"TrueLight Branding, Inc.",Mission Increase,Confirmed,2026-10-30,Oct 2026 | Q4,8.8,100.0,880.0,Mission Increase - Multiply logo,TLB INV 1611.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+TB-006,"TrueLight Branding, Inc.",Mission Increase,Confirmed,2026-10-30,Oct 2026 | Q4,5.4,100.0,540.0,Mission Increase - Gratitude Report - cover designs,TLB INV 1611.pdf,,Q4 2026 (Oct - Dec),2026-10,2026
+GP-004,Grace Parker,TGT,Confirmed,2026-11-11,2026-11 | Q4,6.2,95.0,589.0,Annual Report Design - TGT [Project: Annual Report 2026],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-11-06 to 2026-11-11 (3 entries),Q4 2026 (Oct - Dec),2026-11,2026
+GP-018,Grace Parker,Charlotte Institute for Faith & Work,Confirmed,2026-11-11,2026-11 | Q4,4.52,95.0,429.4,Draft Design [Project: Charlotte Institute for Faith and Work],Grace_Parker_2026_itemized_2026-Jan-01-2026-Dec-31.csv,Itemized date range: 2026-11-02 to 2026-11-11 (5 entries),Q4 2026 (Oct - Dec),2026-11,2026
